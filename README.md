@@ -1,11 +1,4 @@
-<img src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png">
-
-<h2 align="center">API GoBarber</h2>
-
-
-## :pen: Description
-<p>API Rest application of client appointments for barbershops.</p>
-<p>It is a platform for scheduling in hairdressers / barbershops, where the barbers schedule their clients, in their days and hours of operation, and then their clients can access the platform and age with it.</p>
+<h2 align="center">API Lavou</h2>
 
 ## :rocket: Tecnologies
 
