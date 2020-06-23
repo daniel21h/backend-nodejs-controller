@@ -1,5 +1,7 @@
 import { container } from 'tsyringe';
 
+import '@modules/users/providers';
+
 // Garante que a variável passada em segundo parametro, tem exatamente este formato abaixo
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 // Repo que será injetado no constructor quando for necessário uma var de seu mesmo tipo
