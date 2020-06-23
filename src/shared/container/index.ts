@@ -1,6 +1,7 @@
 import { container } from 'tsyringe';
 
 import '@modules/users/providers';
+import './providers';
 
 // Garante que a variável passada em segundo parametro, tem exatamente este formato abaixo
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
