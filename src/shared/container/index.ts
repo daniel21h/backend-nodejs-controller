@@ -8,15 +8,14 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 // Repo que será injetado no constructor quando for necessário uma var de seu mesmo tipo
 import AppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentsRepository';
 
-// Garante que a variável passada em segundo parametro, tem exatamente este formato abaixo
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
-// Repo que será injetado no constructor quando for necessário uma var de seu mesmo tipo
 import UsersRepository from '@modules/users/infra/typeorm/repositories/UsersRepository';
 
-// Garante que a variável passada em segundo parametro, tem exatamente este formato abaixo
 import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
-// Repo que será injetado no constructor quando for necessário uma var de seu mesmo tipo
 import UserTokensRepository from '@modules/users/infra/typeorm/repositories/UserTokensRepository';
+
+import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
+import NotificationsRepository from '@modules/notifications/infra/typeorm/repositories/NotificationsRepository';
 
 container.registerSingleton<IAppointmentsRepository>(
   'AppointmentsRepository',
@@ -31,4 +30,9 @@ container.registerSingleton<IUsersRepository>(
 container.registerSingleton<IUserTokensRepository>(
   'UserTokensRepository',
   UserTokensRepository,
+);
+
+container.registerSingleton<INotificationsRepository>(
+  'NotificationsRepository',
+  NotificationsRepository,
 );
