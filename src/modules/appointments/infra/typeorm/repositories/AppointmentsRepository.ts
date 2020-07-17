@@ -4,6 +4,7 @@ import IAppointmentsRepository from '@modules/appointments/repositories/IAppoint
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
 import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllInMonthFromProviderDTO';
 import IFindAllInDayFromProviderDTO from '@modules/appointments/dtos/IFindAllInDayFromProviderDTO';
+import IFindAllFromProviderDTO from '@modules/appointments/dtos/IFindAllFromProviderDTO';
 
 import Appointment from '../entities/Appointment';
 
@@ -28,6 +29,18 @@ class AppointmentsRepository implements IAppointmentsRepository {
     return findAppointment;
   }
 
+  public async findAllFromProvider({
+    user_id,
+  }: IFindAllFromProviderDTO): Promise<Appointment[]> {
+    const appointments = await this.ormRepository.find({
+      where: {
+        user_id,
+      },
+    });
+
+    return appointments;
+  }
+
   public async findAllInMonthFromProvider({
     provider_id,
     month,
@@ -40,7 +53,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
         provider_id,
         date: Raw(
           dateFieldName =>
-            `to_chart(${dateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}'`,
+            `to_char(${dateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}'`,
         ),
       },
     });
@@ -62,7 +75,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
         provider_id,
         date: Raw(
           dateFieldName =>
-            `to_chart(${dateFieldName}, 'DD-MM-YYYY') = '${parsedDay}-${parsedMonth}-${year}'`,
+            `to_char(${dateFieldName}, 'DD-MM-YYYY') = '${parsedDay}-${parsedMonth}-${year}'`,
         ),
       },
       relations: ['user'],

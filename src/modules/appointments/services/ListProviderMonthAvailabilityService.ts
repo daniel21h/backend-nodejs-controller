@@ -26,10 +26,10 @@ class ListProviderMonthAvailabilityService {
   // List all service providers except the user who is listing
   public async execute({
     provider_id,
-    month,
     year,
+    month,
   }: IRequest): Promise<IResponse> {
-    // Appointments of the month
+    // Appointments of the month specific
     const appointments = await this.appointmentsRepository.findAllInMonthFromProvider(
       {
         provider_id,
@@ -38,17 +38,22 @@ class ListProviderMonthAvailabilityService {
       },
     );
 
+    // Number of days each month
     const numberOfDaysInMonth = getDaysInMonth(new Date(year, month - 1));
 
+    // For each day of the month
     const eachDayArray = Array.from(
       { length: numberOfDaysInMonth },
       (_, index) => index + 1,
     );
 
+    // console.log(eachDayArray);
+
     // Checks for appointments on certain days
     const availability = eachDayArray.map(day => {
       const compareDate = new Date(year, month - 1, day, 23, 59, 59);
 
+      // Appointments of the day specific
       const appointmentsInDay = appointments.filter(appointment => {
         return getDate(appointment.date) === day;
       });

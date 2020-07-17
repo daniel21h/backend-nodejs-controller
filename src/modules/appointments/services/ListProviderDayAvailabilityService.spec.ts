@@ -13,28 +13,28 @@ describe('ListProviders', () => {
     );
   });
 
-  it('should be able to list the month availability from provider', async () => {
+  it('should be able to list the day availability from provider', async () => {
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
       user_id: 'user',
-      date: new Date(2020, 5, 27, 14, 0, 0),
+      date: new Date(2020, 7, 10, 14, 0, 0),
     });
 
     await fakeAppointmentsRepository.create({
       provider_id: 'user',
       user_id: 'user',
-      date: new Date(2020, 5, 27, 15, 0, 0),
+      date: new Date(2020, 7, 10, 15, 0, 0),
     });
 
-    jest.spyOn(Date, 'now').mockImplementation(() => {
-      return new Date(2020, 5, 27, 11).getTime();
+    jest.spyOn(Date, 'now').mockImplementationOnce(() => {
+      return new Date(2020, 7, 10, 11).getTime();
     });
 
     const availability = await listProviderDayAvailability.execute({
       provider_id: 'user',
       year: 2020,
-      month: 6,
-      day: 27,
+      month: 8,
+      day: 10,
     });
 
     // I hope my answer is an array, and that within it I have the 27th and 28th available false

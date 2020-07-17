@@ -52,24 +52,41 @@ class CreateAppointmentService {
       throw new AppError("You can't create an appointment on a past date.");
     }
 
+    if (
+      isBefore(
+        appointmentDate,
+        new Date().setHours(new Date(Date.now()).getHours() + 48),
+      )
+    ) {
+      throw new AppError(
+        'You can only create an appointment after 48 from the current time.',
+      );
+    }
+
     if (user_id === provider_id) {
       throw new AppError("You can't create an appointment with yourself.");
     }
 
     if (getHours(appointmentDate) < 8 || getHours(appointmentDate) > 20) {
       throw new AppError(
-        'You can only create appointments between 8am and 5pm.',
+        'You can only create appointments between 8am and 8pm.',
       );
     }
 
-    const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
-      appointmentDate,
-      provider_id,
-    );
+    // if (getHours(appointmentDate) < getHours(appointmentDate) + 12) {
+    //   throw new AppError(
+    //     'You can only create an appointment after 12 from the current time.',
+    //   );
+    // } //Code is errored
 
-    if (findAppointmentInSameDate) {
-      throw new AppError('This appointment is already booked');
-    }
+    // const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
+    //   appointmentDate,
+    //   provider_id,
+    // );
+
+    // if (findAppointmentInSameDate) {
+    //   throw new AppError('This appointment is already booked');
+    // }
 
     const appointment = await this.appointmentsRepository.create({
       provider_id,
