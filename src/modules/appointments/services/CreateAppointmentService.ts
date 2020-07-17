@@ -73,21 +73,6 @@ class CreateAppointmentService {
       );
     }
 
-    // if (getHours(appointmentDate) < getHours(appointmentDate) + 12) {
-    //   throw new AppError(
-    //     'You can only create an appointment after 12 from the current time.',
-    //   );
-    // } //Code is errored
-
-    // const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
-    //   appointmentDate,
-    //   provider_id,
-    // );
-
-    // if (findAppointmentInSameDate) {
-    //   throw new AppError('This appointment is already booked');
-    // }
-
     const appointment = await this.appointmentsRepository.create({
       provider_id,
       user_id,

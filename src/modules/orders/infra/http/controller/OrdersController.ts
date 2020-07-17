@@ -11,6 +11,17 @@ export default class OrdersController {
   }
 
   public async create(request: Request, response: Response): Promise<Response> {
-    // TODO
+    // Retrieve user logged in to appointment
+    // const user_id = request.user.id;
+    const { user_id, items } = request.body;
+
+    const createOrder = container.resolve(CreateOrderService);
+
+    const user = await createOrder.execute({
+      user_id,
+      items,
+    });
+
+    return response.json(user);
   }
 }

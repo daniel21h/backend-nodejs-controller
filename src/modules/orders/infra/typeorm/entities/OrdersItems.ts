@@ -21,7 +21,7 @@ class OrdersItems {
   order: Order;
 
   @ManyToOne(() => Item, item => item.order_items)
-  @JoinColumn({ name: 'Item_id' })
+  @JoinColumn({ name: 'item_id' })
   item: Item;
 
   @Column()

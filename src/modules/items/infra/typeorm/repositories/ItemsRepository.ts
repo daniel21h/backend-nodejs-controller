@@ -1,8 +1,7 @@
-import { getRepository, Repository, In, Not } from 'typeorm';
+import { getRepository, Repository, In } from 'typeorm';
 
 import IItemsRepository from '@modules/items/repositories/IItemsRepository';
 import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
-import IFindAllItemsDTO from '@modules/items/dtos/IFindAllItemsDTO';
 import Item from '../entities/Item';
 
 interface IFindItems {
@@ -48,24 +47,6 @@ class ItemsRepository implements IItemsRepository {
     });
 
     return existentItems;
-  }
-
-  public async findAllItems({
-    except_item_id,
-  }: IFindAllItemsDTO): Promise<Item[]> {
-    let items: Item[];
-
-    if (except_item_id) {
-      items = await this.ormRepository.find({
-        where: {
-          id: Not(except_item_id),
-        },
-      });
-    } else {
-      items = await this.ormRepository.find();
-    }
-
-    return items;
   }
 }
 

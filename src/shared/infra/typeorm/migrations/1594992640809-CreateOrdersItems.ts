@@ -21,10 +21,8 @@ export default class CreateOrdersItems1594992640809
             scale: 2,
           },
           {
-            name: 'weight',
-            type: 'decimal',
-            precision: 10,
-            scale: 2,
+            name: 'quantity',
+            type: 'int',
           },
           {
             name: 'created_at',

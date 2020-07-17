@@ -7,6 +7,6 @@ interface IItem {
 }
 
 export default interface ICreateOrderDTO {
-  user: User[];
+  user: User;
   items: IItem[];
 }
