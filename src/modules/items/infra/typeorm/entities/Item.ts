@@ -10,7 +10,7 @@ import {
 import OrdersItems from '@modules/orders/infra/typeorm/entities/OrdersItems';
 
 @Entity('items')
-class Product {
+class Item {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -33,4 +33,4 @@ class Product {
   updated_at: Date;
 }
 
-export default Product;
+export default Item;
