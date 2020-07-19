@@ -1,3 +1,3 @@
 export default interface IFindAllItemsDTO {
-  datas: string;
+  item_id: string;
 }

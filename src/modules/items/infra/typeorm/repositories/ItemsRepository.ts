@@ -37,6 +37,12 @@ class ItemsRepository implements IItemsRepository {
     return item;
   }
 
+  public async findAll(): Promise<Item[]> {
+    const items = await this.ormRepository.find();
+
+    return items;
+  }
+
   public async findAllById(items: IFindItems[]): Promise<Item[]> {
     const itemIds = items.map(item => item.id);
 

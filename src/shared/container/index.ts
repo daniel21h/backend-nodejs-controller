@@ -23,6 +23,9 @@ import ItemsRepository from '@modules/items/infra/typeorm/repositories/ItemsRepo
 import IOrdersRepository from '@modules/orders/repositories/IOrdersRepository';
 import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersRepository';
 
+import IWashersRepository from '@modules/washers/repositories/IWashersRepository';
+import WashersRepository from '@modules/washers/infra/typeorm/repositories/WashersRepository';
+
 container.registerSingleton<IAppointmentsRepository>(
   'AppointmentsRepository',
   AppointmentsRepository,
@@ -51,4 +54,9 @@ container.registerSingleton<IItemsRepository>(
 container.registerSingleton<IOrdersRepository>(
   'OrdersRepository',
   OrdersRepository,
+);
+
+container.registerSingleton<IWashersRepository>(
+  'WashersRepository',
+  WashersRepository,
 );

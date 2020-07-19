@@ -9,6 +9,8 @@ import passwordRouter from '@modules/users/infra/http/routes/password.routes';
 import itemsRouter from '@modules/items/infra/http/routes/items.routes';
 import ordersRouter from '@modules/orders/infra/http/routes/orders.routes';
 
+import washersRouter from '@modules/washers/infra/http/routes/washers.routes';
+
 const routes = Router();
 
 routes.use('/appointments', appointmentsRouter);
@@ -19,5 +21,7 @@ routes.use('/password', passwordRouter);
 
 routes.use('/items', itemsRouter);
 routes.use('/orders', ordersRouter);
+
+routes.use('/washers', washersRouter);
 
 export default routes;

@@ -6,7 +6,7 @@ import Item from '../infra/typeorm/entities/Item';
 import IItemsRepository from '../repositories/IItemsRepository';
 
 interface IRequest {
-  id: string;
+  item_id: string;
 }
 
 @injectable()
@@ -16,8 +16,8 @@ class ListItemsService {
     private itemsRepository: IItemsRepository,
   ) {}
 
-  public async execute({ id }: IRequest): Promise<Item | undefined> {
-    const items = await this.itemsRepository.findAllById(id);
+  public async execute({ item_id }: IRequest): Promise<Item[]> {
+    const items = await this.itemsRepository.findAll({ item_id });
 
     return items;
   }

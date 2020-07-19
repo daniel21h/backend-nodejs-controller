@@ -19,6 +19,7 @@ interface IRequest {
   provider_id: string;
   user_id: string;
   date: Date;
+  delivery_date: Date;
 }
 
 /**
@@ -43,23 +44,42 @@ class CreateAppointmentService {
 
   public async execute({
     date,
+    delivery_date,
     provider_id,
     user_id,
   }: IRequest): Promise<Appointment> {
     const appointmentDate = startOfHour(date);
+    const appointmentDeliveryDate = startOfHour(delivery_date);
 
     if (isBefore(appointmentDate, Date.now())) {
+      throw new AppError("You can't create an appointment on a past date.");
+    }
+
+    if (isBefore(appointmentDeliveryDate, Date.now())) {
       throw new AppError("You can't create an appointment on a past date.");
     }
 
     if (
       isBefore(
         appointmentDate,
-        new Date().setHours(new Date(Date.now()).getHours() + 48),
+        new Date().setHours(new Date(Date.now()).getHours() + 12),
       )
     ) {
       throw new AppError(
-        'You can only create an appointment after 48 from the current time.',
+        'You can only create an appointment after 12 from the current time.',
+      );
+    }
+
+    if (
+      isBefore(
+        appointmentDeliveryDate,
+        new Date(appointmentDate).setHours(
+          new Date(Date.now()).getHours() + 48,
+        ),
+      )
+    ) {
+      throw new AppError(
+        'You can only create an appointment to delivery after 48 from the withdrawal time.',
       );
     }
 
@@ -77,20 +97,29 @@ class CreateAppointmentService {
       provider_id,
       user_id,
       date: appointmentDate,
+      delivery_date,
     });
 
-    const dateFormatted = format(appointmentDate, "dd/MM/yyyy 'às' HH:mm'h'", {
-      locale: ptBR,
-    });
+    // const dateFormatted = format(appointmentDate, "dd/MM/yyyy 'às' HH:mm'h'", {
+    //   locale: ptBR,
+    // });
+
+    const deliveryDateFormatted = format(
+      appointmentDate,
+      "dd/MM/yyyy 'às' HH:mm'h'",
+      {
+        locale: ptBR,
+      },
+    );
 
     await this.notificationsRepository.create({
       recipient_id: provider_id,
-      content: `Novo agendamento com para dia ${dateFormatted}`,
+      content: `Novo agendamento para dia ${deliveryDateFormatted}`,
     });
 
     await this.cacheProvider.invalidate(
       `provider-appointments:${provider_id}:${format(
-        appointmentDate,
+        appointmentDeliveryDate,
         'yyyy-M-d',
       )}`,
     );
