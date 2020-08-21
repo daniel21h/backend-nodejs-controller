@@ -8,7 +8,6 @@ export default class AddDeliveryDateInAppointment1595024057537
       new TableColumn({
         name: 'delivery_date',
         type: 'timestamp with time zone',
-        isNullable: true,
       }),
     );
   }

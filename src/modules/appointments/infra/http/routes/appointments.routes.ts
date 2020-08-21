@@ -28,6 +28,7 @@ appointmentsRouter.post(
       provider_id: Joi.string().uuid().required(),
       date: Joi.date(),
       delivery_date: Joi.date(),
+      items: Joi.array(),
     },
   }),
   appointmentsController.create,

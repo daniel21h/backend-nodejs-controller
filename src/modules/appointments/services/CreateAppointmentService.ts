@@ -5,6 +5,7 @@ import AppError from '@shared/errors/AppError';
 
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
+import IItemsRepository from '@modules/items/repositories/IItemsRepository';
 import Appointment from '../infra/typeorm/entities/Appointment';
 
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
@@ -20,6 +21,13 @@ interface IRequest {
   user_id: string;
   date: Date;
   delivery_date: Date;
+  items: IItem[];
+}
+
+interface IItem {
+  id: string;
+  weight: number;
+  quantity: number;
 }
 
 /**
@@ -40,6 +48,9 @@ class CreateAppointmentService {
 
     @inject('CacheProvider')
     private cacheProvider: ICacheProvider,
+
+    @inject('ItemsRepository')
+    private itemsRepository: IItemsRepository,
   ) {}
 
   public async execute({
@@ -47,6 +58,7 @@ class CreateAppointmentService {
     delivery_date,
     provider_id,
     user_id,
+    items,
   }: IRequest): Promise<Appointment> {
     const appointmentDate = startOfHour(date);
     const appointmentDeliveryDate = startOfHour(delivery_date);
@@ -93,11 +105,35 @@ class CreateAppointmentService {
       );
     }
 
+    const existentItems = await this.itemsRepository.findAllById(items);
+
+    if (!existentItems.length) {
+      throw new AppError('Could no find any products with the given ids');
+    }
+
+    const existentItemsIds = existentItems.map(item => item.id);
+
+    const checkInexistentItems = items.filter(
+      item => !existentItemsIds.includes(item.id),
+    );
+
+    if (checkInexistentItems.length) {
+      throw new AppError(`Could not find item ${checkInexistentItems[0].id}`);
+    }
+
+    const serializedItems = items.map(item => ({
+      item_id: item.id,
+      quantity: item.quantity,
+      weight: item.weight,
+      price: existentItems.filter(p => p.id === item.id)[0].price,
+    }));
+
     const appointment = await this.appointmentsRepository.create({
       provider_id,
       user_id,
       date: appointmentDate,
       delivery_date,
+      items: serializedItems,
     });
 
     // const dateFormatted = format(appointmentDate, "dd/MM/yyyy 'às' HH:mm'h'", {

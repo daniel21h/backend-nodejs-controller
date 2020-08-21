@@ -8,7 +8,7 @@ import {
   ManyToOne,
 } from 'typeorm';
 
-import Order from '@modules/orders/infra/typeorm/entities/Order';
+import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 import Item from '@modules/items/infra/typeorm/entities/Item';
 
 @Entity('orders_items')
@@ -16,9 +16,9 @@ class OrdersItems {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(() => Order, order => order.order_items)
-  @JoinColumn({ name: 'order_id' })
-  order: Order;
+  @ManyToOne(() => Appointment, order => order.order_items)
+  @JoinColumn({ name: 'appointment_id' })
+  order: Appointment;
 
   @ManyToOne(() => Item, item => item.order_items)
   @JoinColumn({ name: 'item_id' })
@@ -28,7 +28,7 @@ class OrdersItems {
   item_id: string;
 
   @Column()
-  order_id: string;
+  appointment_id: string;
 
   @Column('decimal')
   price: number;

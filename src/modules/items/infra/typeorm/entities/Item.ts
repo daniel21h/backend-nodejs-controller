@@ -5,9 +5,12 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   OneToMany,
+  ManyToOne,
+  JoinColumn,
 } from 'typeorm';
 
 import OrdersItems from '@modules/orders/infra/typeorm/entities/OrdersItems';
+import Category from './Category';
 
 @Entity('items')
 class Item {
@@ -16,6 +19,10 @@ class Item {
 
   @Column()
   name: string;
+
+  @ManyToOne(() => Category, category => category.item, { eager: true })
+  @JoinColumn({ name: 'category_id' })
+  category: Category;
 
   @Column('decimal')
   price: number;

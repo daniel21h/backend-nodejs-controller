@@ -1,59 +1,94 @@
-import { getRepository, Repository, In } from 'typeorm';
+// import { getRepository, Repository, In } from 'typeorm';
 
-import IItemsRepository from '@modules/items/repositories/IItemsRepository';
-import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
-import Item from '../entities/Item';
+// import IItemsRepository from '@modules/items/repositories/IItemsRepository';
+// import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
+// import IFindAllByCategoryDTO from '@modules/items/dtos/IFindAllByCategoryDTO';
+// import Item from '../entities/Item';
 
-interface IFindItems {
-  id: string;
-}
+// interface IFindItems {
+//   id: string;
+// }
 
-class ItemsRepository implements IItemsRepository {
-  private ormRepository: Repository<Item>;
+// interface IFindCItems {
+//   category: string;
+// }
 
-  constructor() {
-    this.ormRepository = getRepository(Item);
-  }
+// class ItemsRepository implements IItemsRepository {
+//   private ormRepository: Repository<Item>;
 
-  public async create({ name, price, weight }: ICreateItemDTO): Promise<Item> {
-    const item = await this.ormRepository.create({
-      name,
-      price,
-      weight,
-    });
+//   constructor() {
+//     this.ormRepository = getRepository(Item);
+//   }
 
-    await this.ormRepository.save(item);
+//   public async create({
+//     name,
+//     category,
+//     price,
+//     weight,
+//   }: ICreateItemDTO): Promise<Item> {
+//     const item = await this.ormRepository.create({
+//       name,
+//       category,
+//       price,
+//       weight,
+//     });
 
-    return item;
-  }
+//     await this.ormRepository.save(item);
 
-  public async findByName(name: string): Promise<Item | undefined> {
-    const item = await this.ormRepository.findOne({
-      where: {
-        name,
-      },
-    });
+//     return item;
+//   }
 
-    return item;
-  }
+//   public async findByName(name: string): Promise<Item | undefined> {
+//     const item = await this.ormRepository.findOne({
+//       where: {
+//         name,
+//       },
+//     });
 
-  public async findAll(): Promise<Item[]> {
-    const items = await this.ormRepository.find();
+//     return item;
+//   }
 
-    return items;
-  }
+//   public async findByCategory(
+//     category: IFindAllByCategoryDTO,
+//   ): Promise<Item[]> {
+//     const item = await this.ormRepository.find({
+//       where: {
+//         category,
+//       },
+//     });
 
-  public async findAllById(items: IFindItems[]): Promise<Item[]> {
-    const itemIds = items.map(item => item.id);
+//     return item;
+//   }
 
-    const existentItems = await this.ormRepository.find({
-      where: {
-        id: In(itemIds),
-      },
-    });
+//   public async findAll(): Promise<Item[]> {
+//     const items = await this.ormRepository.find();
 
-    return existentItems;
-  }
-}
+//     return items;
+//   }
 
-export default ItemsRepository;
+//   public async findAllByIdCategory(items: IFindCItems[]): Promise<Item[]> {
+//     const itemIds = items.map(item => item.category);
+
+//     const existentItems = await this.ormRepository.find({
+//       where: {
+//         category: In(itemIds),
+//       },
+//     });
+
+//     return existentItems;
+//   }
+
+//   public async findAllById(items: IFindItems[]): Promise<Item[]> {
+//     const itemIds = items.map(item => item.id);
+
+//     const existentItems = await this.ormRepository.find({
+//       where: {
+//         id: In(itemIds),
+//       },
+//     });
+
+//     return existentItems;
+//   }
+// }
+
+// export default ItemsRepository;

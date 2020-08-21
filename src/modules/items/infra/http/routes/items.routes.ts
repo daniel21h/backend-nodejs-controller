@@ -6,11 +6,13 @@ import ItemsController from '../controller/ItemsController';
 import ListItemsRepository from '../../typeorm/repositories/ListItemsRepository';
 
 const itemsRouter = Router();
+const itemsRouterCreate = Router();
 const itemsController = new ItemsController();
 
-itemsRouter.use(ensureAuthenticated);
+itemsRouterCreate.use(ensureAuthenticated);
 
-itemsRouter.post('/', itemsController.create);
+itemsRouterCreate.post('/', itemsController.create);
+
 itemsRouter.get('/', async (request, response) => {
   const listItemsRepository = getCustomRepository(ListItemsRepository);
 
@@ -20,4 +22,6 @@ itemsRouter.get('/', async (request, response) => {
   return response.json(items);
 });
 
-export default itemsRouter;
+// itemsRouterCreate.get('/', itemsController.index);
+
+export default [itemsRouter, itemsRouterCreate];

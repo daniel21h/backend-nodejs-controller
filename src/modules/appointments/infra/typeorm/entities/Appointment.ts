@@ -6,9 +6,11 @@ import {
   UpdateDateColumn,
   ManyToOne,
   JoinColumn,
+  OneToMany,
 } from 'typeorm';
 
 import User from '@modules/users/infra/typeorm/entities/User';
+import OrdersItems from '@modules/orders/infra/typeorm/entities/OrdersItems';
 
 @Entity('appointments')
 class Appointment {
@@ -34,6 +36,11 @@ class Appointment {
 
   @Column('timestamp with time zone')
   delivery_date: Date;
+
+  @OneToMany(() => OrdersItems, order_items => order_items.order, {
+    cascade: true,
+  })
+  order_items: OrdersItems[];
 
   @CreateDateColumn()
   created_at: Date;
