@@ -1,94 +1,101 @@
-// import { getRepository, Repository, In } from 'typeorm';
+import { getRepository, Repository, In } from 'typeorm';
 
-// import IItemsRepository from '@modules/items/repositories/IItemsRepository';
-// import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
-// import IFindAllByCategoryDTO from '@modules/items/dtos/IFindAllByCategoryDTO';
-// import Item from '../entities/Item';
+import IItemsRepository from '@modules/items/repositories/IItemsRepository';
+import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
+import IFindAllFromCategoryDTO from '@modules/items/dtos/IFindAllFromCategoryDTO';
+import Item from '../entities/Item';
+import Category from '../entities/Category';
 
-// interface IFindItems {
-//   id: string;
-// }
+interface IFindItems {
+  id: string;
+}
 
-// interface IFindCItems {
-//   category: string;
-// }
+interface IFilterItems {
+  category_id: string;
+}
 
-// class ItemsRepository implements IItemsRepository {
-//   private ormRepository: Repository<Item>;
+class ItemsRepository implements IItemsRepository {
+  private ormRepository: Repository<Item>;
 
-//   constructor() {
-//     this.ormRepository = getRepository(Item);
-//   }
+  constructor() {
+    this.ormRepository = getRepository(Item);
+  }
 
-//   public async create({
-//     name,
-//     category,
-//     price,
-//     weight,
-//   }: ICreateItemDTO): Promise<Item> {
-//     const item = await this.ormRepository.create({
-//       name,
-//       category,
-//       price,
-//       weight,
-//     });
+  public async create({
+    name,
+    category,
+    price,
+    weight,
+  }: ICreateItemDTO): Promise<Item> {
+    const categoryRepository = getRepository(Category);
+    // Verificar se a categoria já existe
+    // Existe? Buscar ela no DB e o usar o ID que foi retornado
+    let itemCategory = await categoryRepository.findOne({
+      where: {
+        title: category,
+      },
+    });
 
-//     await this.ormRepository.save(item);
+    if (!itemCategory) {
+      // Não existe? Crio ela
+      itemCategory = categoryRepository.create({
+        title: category,
+      });
 
-//     return item;
-//   }
+      await categoryRepository.save(itemCategory);
+    }
 
-//   public async findByName(name: string): Promise<Item | undefined> {
-//     const item = await this.ormRepository.findOne({
-//       where: {
-//         name,
-//       },
-//     });
+    const item = await this.ormRepository.create({
+      name,
+      category: itemCategory,
+      price,
+      weight,
+    });
 
-//     return item;
-//   }
+    await this.ormRepository.save(item);
 
-//   public async findByCategory(
-//     category: IFindAllByCategoryDTO,
-//   ): Promise<Item[]> {
-//     const item = await this.ormRepository.find({
-//       where: {
-//         category,
-//       },
-//     });
+    return item;
+  }
 
-//     return item;
-//   }
+  public async findByName(name: string): Promise<Item | undefined> {
+    const item = await this.ormRepository.findOne({
+      where: {
+        name,
+      },
+    });
 
-//   public async findAll(): Promise<Item[]> {
-//     const items = await this.ormRepository.find();
+    return item;
+  }
 
-//     return items;
-//   }
+  public async findAll(): Promise<Item[]> {
+    const items = await this.ormRepository.find();
 
-//   public async findAllByIdCategory(items: IFindCItems[]): Promise<Item[]> {
-//     const itemIds = items.map(item => item.category);
+    return items;
+  }
 
-//     const existentItems = await this.ormRepository.find({
-//       where: {
-//         category: In(itemIds),
-//       },
-//     });
+  public async findAllById(items: IFindItems[]): Promise<Item[]> {
+    const itemIds = items.map(item => item.id);
 
-//     return existentItems;
-//   }
+    const existentItems = await this.ormRepository.find({
+      where: {
+        id: In(itemIds),
+      },
+    });
 
-//   public async findAllById(items: IFindItems[]): Promise<Item[]> {
-//     const itemIds = items.map(item => item.id);
+    return existentItems;
+  }
 
-//     const existentItems = await this.ormRepository.find({
-//       where: {
-//         id: In(itemIds),
-//       },
-//     });
+  public async findAllItems(category_id: IFilterItems[]): Promise<Item[]> {
+    const itemIds = category_id.map(item => item.category_id);
 
-//     return existentItems;
-//   }
-// }
+    const existentItems = await this.ormRepository.find({
+      where: {
+        category_id: In(itemIds),
+      },
+    });
 
-// export default ItemsRepository;
+    return existentItems;
+  }
+}
+
+export default ItemsRepository;

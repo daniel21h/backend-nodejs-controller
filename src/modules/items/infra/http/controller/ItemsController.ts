@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 
 import { container } from 'tsyringe';
 import CreateItemService from '@modules/items/services/CreateItemService';
+// import ListItemsService from '@modules/items/services/ListItemsService';
 // import ListItemsByCategoryService from '@modules/items/services/ListItemsByCategoryService';
 
 export default class ItemsController {
@@ -21,17 +22,22 @@ export default class ItemsController {
   }
 
   // public async index(request: Request, response: Response): Promise<Response> {
-  //   const { category } = request.query;
+  //   // Retrieve user logged in to appointment
+  //   const { category_id } = request.body;
+  //   // const { id } = request.params;
 
-  //   const listItemsByCategoryService = container.resolve(
-  //     ListItemsByCategoryService,
-  //   );
+  //   const listItemsRepository = container.resolve(ListItemsService);
+  //   // const listUserOrders = container.resolve(ListUserOrdersService);
 
-  //   const itemsCategory = await listItemsByCategoryService.execute({
-  //     category,
+  //   const items = await listItemsRepository.execute({
+  //     category_id: String(category_id),
   //   });
 
+  //   // const order = await listUserOrders.execute({
+  //   //   id,
+  //   // });
+
   //   // Retornando a resposta ao usuário
-  //   return response.json(itemsCategory);
+  //   return response.json(items);
   // }
 }
