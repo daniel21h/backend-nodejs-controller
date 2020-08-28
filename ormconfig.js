@@ -19,9 +19,6 @@ module.exports = {
   "name": "mongo",
   "type": "mongodb",
   "url": process.env.MONGODB_URI,
-  "host": "localhost",
-  "port": 27017,
-  "database": "lavou",
   "useUnifiedTopology": true,
   "entities": [
     "./dist/modules/**/infra/typeorm/schemas/*.js"
