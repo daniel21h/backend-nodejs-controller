@@ -17,6 +17,9 @@ class User {
   name: string;
 
   @Column()
+  whatsapp: number;
+
+  @Column()
   email: string;
 
   @Column()

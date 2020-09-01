@@ -1,9 +1,9 @@
-// import AppError from '@shared/errors/AppError';
+import { inject, injectable } from 'tsyringe';
 
-import { getRepository } from 'typeorm';
+import AppError from '@shared/errors/AppError';
+
 import Item from '../infra/typeorm/entities/Item';
-import Category from '../infra/typeorm/entities/Category';
-// import IItemsRepository from '../repositories/IItemsRepository';
+import IItemsRepository from '../repositories/IItemsRepository';
 
 interface IRequest {
   name: string;
@@ -12,50 +12,34 @@ interface IRequest {
   weight: number;
 }
 
-class CreateItemService {
+@injectable()
+class CreateWasherService {
+  constructor(
+    @inject('ItemsRepository')
+    private itemsRepository: IItemsRepository,
+  ) {}
+
   public async execute({
     name,
     category,
     price,
     weight,
   }: IRequest): Promise<Item> {
-    const itemRepository = getRepository(Item);
-    const categoryRepository = getRepository(Category);
+    const itemExists = await this.itemsRepository.findByName(name);
 
-    // const { total } = await transactionsRepository.getBalance();
-
-    // if (type === 'outcome' && total < value) {
-    //   throw new AppError('You do not have enough balance');
-    // }
-
-    // Verificar se a categoria já existe
-    // Existe? Buscar ela no DB e o usar o ID que foi retornado
-    let itemCategory = await categoryRepository.findOne({
-      where: {
-        title: category,
-      },
-    });
-
-    if (!itemCategory) {
-      // Não existe? Crio ela
-      itemCategory = categoryRepository.create({
-        title: category,
-      });
-
-      await categoryRepository.save(itemCategory);
+    if (itemExists) {
+      throw new AppError('This item already exist!');
     }
 
-    const item = itemRepository.create({
+    const item = await this.itemsRepository.create({
       name,
-      category: itemCategory,
+      category,
       price,
       weight,
     });
-
-    await itemRepository.save(item);
 
     return item;
   }
 }
 
-export default CreateItemService;
+export default CreateWasherService;

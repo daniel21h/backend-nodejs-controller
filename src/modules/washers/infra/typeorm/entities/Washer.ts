@@ -9,6 +9,9 @@ import {
 @Entity('washers')
 class Washer {
   @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @Column()
   name: string;
 
   @Column()

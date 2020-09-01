@@ -2,9 +2,7 @@ import { getRepository, Repository, In } from 'typeorm';
 
 import IItemsRepository from '@modules/items/repositories/IItemsRepository';
 import ICreateItemDTO from '@modules/items/dtos/ICreateItemDTO';
-import IFindAllFromCategoryDTO from '@modules/items/dtos/IFindAllFromCategoryDTO';
 import Item from '../entities/Item';
-import Category from '../entities/Category';
 
 interface IFindItems {
   id: string;
@@ -27,27 +25,9 @@ class ItemsRepository implements IItemsRepository {
     price,
     weight,
   }: ICreateItemDTO): Promise<Item> {
-    const categoryRepository = getRepository(Category);
-    // Verificar se a categoria já existe
-    // Existe? Buscar ela no DB e o usar o ID que foi retornado
-    let itemCategory = await categoryRepository.findOne({
-      where: {
-        title: category,
-      },
-    });
-
-    if (!itemCategory) {
-      // Não existe? Crio ela
-      itemCategory = categoryRepository.create({
-        title: category,
-      });
-
-      await categoryRepository.save(itemCategory);
-    }
-
     const item = await this.ormRepository.create({
       name,
-      category: itemCategory,
+      category,
       price,
       weight,
     });
@@ -95,6 +75,16 @@ class ItemsRepository implements IItemsRepository {
     });
 
     return existentItems;
+  }
+
+  public async findByCategory(category: string): Promise<Item[]> {
+    const item = await this.ormRepository.find({
+      where: {
+        category,
+      },
+    });
+
+    return item;
   }
 }
 

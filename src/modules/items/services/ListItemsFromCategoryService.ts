@@ -17,11 +17,9 @@ class ListItemsFromCategoryService {
 
   // List all service providers except the user who is listing
   public async execute({ category }: IRequest): Promise<Item[]> {
-    const appointments = await this.itemsRepository.findByCategoryItems({
-      category,
-    });
+    const search = await this.itemsRepository.findByCategory(category);
 
-    return appointments;
+    return search;
   }
 }
 

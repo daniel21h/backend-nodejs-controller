@@ -48,6 +48,16 @@ class WashersRepository implements IWashersRepository {
 
     return findWasher;
   }
+
+  public async findByCep(cep: string): Promise<Washer[]> {
+    const findWasher = await this.ormRepository.find({
+      where: {
+        cep,
+      },
+    });
+
+    return findWasher;
+  }
 }
 
 export default WashersRepository;

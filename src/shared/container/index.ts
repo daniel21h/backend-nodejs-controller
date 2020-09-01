@@ -26,6 +26,9 @@ import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersR
 import IWashersRepository from '@modules/washers/repositories/IWashersRepository';
 import WashersRepository from '@modules/washers/infra/typeorm/repositories/WashersRepository';
 
+import ISaveCepRepository from '@modules/washers/repositories/ISaveCepRepository';
+import SaveCepRepository from '@modules/washers/infra/typeorm/repositories/SaveCepRepository';
+
 container.registerSingleton<IAppointmentsRepository>(
   'AppointmentsRepository',
   AppointmentsRepository,
@@ -59,4 +62,9 @@ container.registerSingleton<IOrdersRepository>(
 container.registerSingleton<IWashersRepository>(
   'WashersRepository',
   WashersRepository,
+);
+
+container.registerSingleton<ISaveCepRepository>(
+  'SaveCepRepository',
+  SaveCepRepository,
 );
