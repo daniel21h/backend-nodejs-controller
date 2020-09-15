@@ -1,45 +1,35 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _express = require("express");
-
-var _celebrate = require("celebrate");
-
-var _ensureAuthenticated = _interopRequireDefault(require("../../../../users/infra/http/middlewares/ensureAuthenticated"));
-
-var _AppointmentsController = _interopRequireDefault(require("../controllers/AppointmentsController"));
-
-var _ProviderAppointmentsController = _interopRequireDefault(require("../controllers/ProviderAppointmentsController"));
-
-var _UserAppointmentsController = _interopRequireDefault(require("../controllers/UserAppointmentsController"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const appointmentsRouter = (0, _express.Router)();
-const appointmentsController = new _AppointmentsController.default();
-const providerAppointmentsController = new _ProviderAppointmentsController.default();
-const userAppointmentsController = new _UserAppointmentsController.default();
-appointmentsRouter.use(_ensureAuthenticated.default); // // Listando Agendamentos
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var _a;
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var celebrate_1 = require("celebrate");
+var ensureAuthenticated_1 = __importDefault(require("@modules/users/infra/http/middlewares/ensureAuthenticated"));
+var AppointmentsController_1 = __importDefault(require("../controllers/AppointmentsController"));
+var ProviderAppointmentsController_1 = __importDefault(require("../controllers/ProviderAppointmentsController"));
+var UserAppointmentsController_1 = __importDefault(require("../controllers/UserAppointmentsController"));
+var appointmentsRouter = express_1.Router();
+var appointmentsController = new AppointmentsController_1.default();
+var providerAppointmentsController = new ProviderAppointmentsController_1.default();
+var userAppointmentsController = new UserAppointmentsController_1.default();
+appointmentsRouter.use(ensureAuthenticated_1.default);
+// // Listando Agendamentos
 // appointmentsRouter.get('/', async (request, response) => {
 //   const appointments = await appointmentsRepository.find();
 //   return response.json(appointments);
 // });
 // Criação de agendamento
-
-appointmentsRouter.post('/', (0, _celebrate.celebrate)({
-  [_celebrate.Segments.BODY]: {
-    provider_id: _celebrate.Joi.string().uuid().required(),
-    date: _celebrate.Joi.date(),
-    delivery_date: _celebrate.Joi.date(),
-    items: _celebrate.Joi.array()
-  }
-}), appointmentsController.create); // Listing appointments by provider
-
+appointmentsRouter.post('/', celebrate_1.celebrate((_a = {},
+    _a[celebrate_1.Segments.BODY] = {
+        provider_id: celebrate_1.Joi.string().uuid().required(),
+        date: celebrate_1.Joi.date(),
+        delivery_date: celebrate_1.Joi.date(),
+        items: celebrate_1.Joi.array(),
+    },
+    _a)), appointmentsController.create);
+// Listing appointments by provider
 appointmentsRouter.get('/me', providerAppointmentsController.index);
 appointmentsRouter.get('/me/user', userAppointmentsController.index);
-var _default = appointmentsRouter;
-exports.default = _default;
+exports.default = appointmentsRouter;

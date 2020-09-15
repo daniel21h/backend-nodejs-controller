@@ -29,6 +29,9 @@ import WashersRepository from '@modules/washers/infra/typeorm/repositories/Washe
 import ISaveCepRepository from '@modules/washers/repositories/ISaveCepRepository';
 import SaveCepRepository from '@modules/washers/infra/typeorm/repositories/SaveCepRepository';
 
+import IShippingRepository from '@modules/shipping/repositories/IShippingRepository';
+import ShippingRepository from '@modules/shipping/infra/typeorm/repositories/ShippingRepository';
+
 container.registerSingleton<IAppointmentsRepository>(
   'AppointmentsRepository',
   AppointmentsRepository,
@@ -67,4 +70,9 @@ container.registerSingleton<IWashersRepository>(
 container.registerSingleton<ISaveCepRepository>(
   'SaveCepRepository',
   SaveCepRepository,
+);
+
+container.registerSingleton<IShippingRepository>(
+  'ShippingRepository',
+  ShippingRepository,
 );

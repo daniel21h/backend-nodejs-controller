@@ -36,6 +36,9 @@ class OrdersItems {
   @Column('int')
   quantity: number;
 
+  @Column('boolean')
+  ironing: boolean;
+
   @CreateDateColumn()
   created_at: Date;
 

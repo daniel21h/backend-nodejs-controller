@@ -1,38 +1,24 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _express = require("express");
-
-var _appointments = _interopRequireDefault(require("../../../../modules/appointments/infra/http/routes/appointments.routes"));
-
-var _providers = _interopRequireDefault(require("../../../../modules/appointments/infra/http/routes/providers.routes"));
-
-var _users = _interopRequireDefault(require("../../../../modules/users/infra/http/routes/users.routes"));
-
-var _sessions = _interopRequireDefault(require("../../../../modules/users/infra/http/routes/sessions.routes"));
-
-var _password = _interopRequireDefault(require("../../../../modules/users/infra/http/routes/password.routes"));
-
-var _items = _interopRequireDefault(require("../../../../modules/items/infra/http/routes/items.routes"));
-
-var _orders = _interopRequireDefault(require("../../../../modules/orders/infra/http/routes/orders.routes"));
-
-var _washers = _interopRequireDefault(require("../../../../modules/washers/infra/http/routes/washers.routes"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const routes = (0, _express.Router)();
-routes.use('/appointments', _appointments.default);
-routes.use('/providers', _providers.default);
-routes.use('/users', _users.default);
-routes.use('/sessions', _sessions.default);
-routes.use('/password', _password.default);
-routes.use('/items', _items.default);
-routes.use('/orders', _orders.default);
-routes.use('/washers', _washers.default);
-var _default = routes;
-exports.default = _default;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var appointments_routes_1 = __importDefault(require("@modules/appointments/infra/http/routes/appointments.routes"));
+var providers_routes_1 = __importDefault(require("@modules/appointments/infra/http/routes/providers.routes"));
+var users_routes_1 = __importDefault(require("@modules/users/infra/http/routes/users.routes"));
+var sessions_routes_1 = __importDefault(require("@modules/users/infra/http/routes/sessions.routes"));
+var password_routes_1 = __importDefault(require("@modules/users/infra/http/routes/password.routes"));
+var items_routes_1 = __importDefault(require("@modules/items/infra/http/routes/items.routes"));
+var orders_routes_1 = __importDefault(require("@modules/orders/infra/http/routes/orders.routes"));
+var washers_routes_1 = __importDefault(require("@modules/washers/infra/http/routes/washers.routes"));
+var routes = express_1.Router();
+routes.use('/appointments', appointments_routes_1.default);
+routes.use('/providers', providers_routes_1.default);
+routes.use('/users', users_routes_1.default);
+routes.use('/sessions', sessions_routes_1.default);
+routes.use('/password', password_routes_1.default);
+routes.use('/items', items_routes_1.default);
+routes.use('/orders', orders_routes_1.default);
+routes.use('/washers', washers_routes_1.default);
+exports.default = routes;

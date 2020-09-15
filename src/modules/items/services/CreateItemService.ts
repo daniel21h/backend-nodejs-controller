@@ -13,7 +13,7 @@ interface IRequest {
 }
 
 @injectable()
-class CreateWasherService {
+class CreateItemsService {
   constructor(
     @inject('ItemsRepository')
     private itemsRepository: IItemsRepository,
@@ -42,4 +42,4 @@ class CreateWasherService {
   }
 }
 
-export default CreateWasherService;
+export default CreateItemsService;

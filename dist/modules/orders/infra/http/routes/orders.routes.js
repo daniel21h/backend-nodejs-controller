@@ -1,19 +1,12 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _express = require("express");
-
-var _OrdersController = _interopRequireDefault(require("../controller/OrdersController"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const ordersRouter = (0, _express.Router)();
-const ordersController = new _OrdersController.default();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var OrdersController_1 = __importDefault(require("../controller/OrdersController"));
+var ordersRouter = express_1.Router();
+var ordersController = new OrdersController_1.default();
 ordersRouter.post('/', ordersController.create);
 ordersRouter.get('/:id', ordersController.show);
-var _default = ordersRouter;
-exports.default = _default;
+exports.default = ordersRouter;

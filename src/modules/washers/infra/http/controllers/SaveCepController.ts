@@ -15,6 +15,7 @@ export default class SaveCepController {
     Number(cep);
 
     const postResponse = await postOffices.consultaCEP({ cep });
+    console.log(postResponse);
 
     const saveCep = await saveCepSearch.execute({
       cep,

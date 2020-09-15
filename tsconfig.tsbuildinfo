@@ -126,8 +126,8 @@
         "signature": "1377923021927244ea19433873b997ad8585533b0a56d5de29cda497f7842756"
       },
       "./src/@types/express.d.ts": {
-        "version": "2f3f38650a9b493dd0dad86101b0614d07342e3185bebdab9e74384101d7224a",
-        "signature": "2f3f38650a9b493dd0dad86101b0614d07342e3185bebdab9e74384101d7224a"
+        "version": "4f94f2604c062e9f974b7ce37cb21a5b69342b1796f8c709725a1e3c2a916143",
+        "signature": "4f94f2604c062e9f974b7ce37cb21a5b69342b1796f8c709725a1e3c2a916143"
       },
       "./src/config/auth.ts": {
         "version": "ff87aae39a2dda6376697de19ce6a203bba15c6c4d1921317dc23308fc302902",
@@ -1546,8 +1546,8 @@
         "signature": "097d4bf3331df1e138ffdcf92e1117f6841bc8337170d927fd955d5ee8a1674b"
       },
       "./src/modules/users/infra/typeorm/entities/User.ts": {
-        "version": "81d8e7aaaf298d2ac4b3d38ad1ded2122130a2ed384daa9a843ad42383c1682f",
-        "signature": "11bcbb18261931d062d11ca81f642cbca56bb4ec7dc0c09ce0e5fe25268baca5"
+        "version": "4e3787f05440a738fd5d59f52f1cabc24f2a57c9487b31c4cb384a6b480647fa",
+        "signature": "dc1d9b346d5b0597513000222bbcc29b28de6a2da5d1fd647e54acf18fc8be83"
       },
       "./src/modules/appointments/infra/typeorm/entities/Appointment.ts": {
         "version": "6eece71573315d32cec31811c311f9b71ffde8f384aa4f231cd0499889dfc7df",
@@ -1557,13 +1557,9 @@
         "version": "aa1b1ca6f69149f190d62228061c4f274b94e6a3b7fa894a14933db6a3bed8f4",
         "signature": "34b9e8308302b9a23b6ad1346a1b17917d43aed29d9bda2e488bb8a3433b1155"
       },
-      "./src/modules/items/infra/typeorm/entities/Category.ts": {
-        "version": "34589a9a5bbbcea1e0546ba53b5c974b9bac25c8888f96e3a11af8c326cbce91",
-        "signature": "cb94ab0ed1de81ea550f578e47a874630f2c32964a45d89c8286d2cbc410ba4c"
-      },
       "./src/modules/items/infra/typeorm/entities/Item.ts": {
-        "version": "e2354441afcd201287c729db58693fe6e2fd53490d2da2cd67323e05fe32a265",
-        "signature": "f579f4c5cb0164b3b2399220f731d05e0a1e70f35e864be1c96d64a720e8f9a6"
+        "version": "cd84aae81a699ebd4a74b9f8c7e38eb52129a03cc7daf97bc61ee5dd557a7ef0",
+        "signature": "70fd6e2ba1feb1d6482b8f32161332126d568fd0df562b6babbaf632c843449d"
       },
       "./src/modules/items/dtos/ICreateItemDTO.ts": {
         "version": "575e9e7de39225ad1b90bac44b1b6300f8be63bd295afad8d3cf50956fd295b3",
@@ -1573,13 +1569,9 @@
         "version": "353299d5b90121eef1dec61f0d28fe6ad4c1efbe12f9e19417ac810479377b68",
         "signature": "199e2d79061a198b8b0e0cbeb0f174bc6809d339a8b30cedb9dae201df830b9a"
       },
-      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts": {
-        "version": "9a310193b9765e5532f5a1a58d42a5d00bc3d156e4d5519810e5b4e7cd27606f",
-        "signature": "a51ba9905cd346e4aa61c4f13f2999d96f6c60124468e86f93b5a4ee694c8816"
-      },
       "./src/modules/items/repositories/IItemsRepository.ts": {
-        "version": "be38308a3d2f50e35c38a56f7b290e66a2fa849a9074099c18d68cb9dbf1fc8b",
-        "signature": "3d9c4d83aca7436323da48109372d5dc83ea0698c330d4266c46c587253330da"
+        "version": "acf0a7eb3fa59db7549a31a1c5c39b8617963c3f631cd911201a5083306e0752",
+        "signature": "0a3a5a9e028232addac3498abdf698939b371b3caa8b3b3057befdfd6b2c7a60"
       },
       "./src/modules/appointments/repositories/IAppointmentsRepository.ts": {
         "version": "9b2b4e811c3539ae004d2cd85aeb6dbd03dc89b56adf79f439b6c4876e8fd340",
@@ -1618,8 +1610,8 @@
         "signature": "238a70f8c157ac18ded9252b1be886ced66883e2fbe95ae7f20119a07caf53d4"
       },
       "./src/modules/users/dtos/ICreateUserDTO.ts": {
-        "version": "7537c0b257eaddc474d08a1c8440abe8cfbd27e125001ddc50ac78d93f535cf4",
-        "signature": "d6ad173df65f219593df83e1a9936a88d80150b140ec7d050f8a5607bfd289d5"
+        "version": "5978e3cfa0b9f95aba9a3612d44b6748c58e977a2fce3534bc2d9edc7747f503",
+        "signature": "fe089cd41151e1b8a035ddaf55e66bd3b8a57b196150bf695cec978935718964"
       },
       "./src/modules/users/dtos/IFindAllProvidersDTO.ts": {
         "version": "b118c1586d19449e05d728e9612d0d19f2722dab233654bb4ed45b0cea08089b",
@@ -1725,33 +1717,37 @@
         "version": "5b8c467c550fb50404acaaa7a4a74d6e30aa6c9fe99a06af4374c67c985b2c10",
         "signature": "fae947abeeb70833a406d6900a77ca28086af79301336aeee2bbfcc41c27c6a6"
       },
+      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts": {
+        "version": "9a310193b9765e5532f5a1a58d42a5d00bc3d156e4d5519810e5b4e7cd27606f",
+        "signature": "a51ba9905cd346e4aa61c4f13f2999d96f6c60124468e86f93b5a4ee694c8816"
+      },
       "./src/modules/items/services/CreateItemService.ts": {
-        "version": "4e8cad157502576fa478c047891c5b7617d99c69ddf3e975f1ba0cdacad184b4",
-        "signature": "0c5a312f97a3d1dfafbf16eda619b128b2dda3ae3f99d03c963f15c865437324"
+        "version": "212b2068390b7b4f39fa83f3d9b561c399a06ed404e006596aafa7686d0caf7e",
+        "signature": "e05c244678c641534fdbdd7d60edc00b39ee1bf63dbc005c54b237b1dafbec39"
       },
       "./src/modules/items/infra/http/controller/ItemsController.ts": {
-        "version": "0d75cafbefd416d07a5c5581eece55c522fd500007abf3e107a46d1d72672167",
+        "version": "765e7cee9437b5583254dbab4b04ed7d03e0ba24336a2675b72de09fff09e60c",
         "signature": "e6489b7c34efdd1bb49351ee13eab07d2bbb5ddb23b071240be70229a7e13f6d"
+      },
+      "./src/modules/items/services/ListItemsFromCategoryService.ts": {
+        "version": "027565f79cc1977c03aac793f280cd637f60183dacfaa92a4439e120b4b5d36e",
+        "signature": "d4566019e4cc142ad98da447e74cc4855ad946c2be01e61d0ef330e1c28afd60"
+      },
+      "./src/modules/items/infra/http/controller/ListItemsController.ts": {
+        "version": "6bf36d62a1737c15ce8ad7a908fd421398a3074bb27dbac7f2eeb82bd4eae7a1",
+        "signature": "251a68cf44b0ecb254508c4b96b2e41c5a4937e22805e26cd218881fd1ec23b4"
       },
       "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": {
         "version": "ffaaf46e2711fe3712b7c2875701bf0e68b27d5257b8be18466d5a1dd3e8358d",
         "signature": "998a7d0c9b97bfbcfd140c1e2396366ea65948e8058f1efe356a6a4c31ffa406"
       },
-      "./src/modules/items/infra/typeorm/repositories/ListCategoryRepository.ts": {
-        "version": "b8ff2f94639635dee3cb03d19f026a019f99b86fb04f07acf3390a434b7b68d7",
-        "signature": "c7664a2200ad2c0f05e0573f25a00c6b8e803555380b8eef277dfba39138842e"
-      },
       "./src/modules/items/infra/http/routes/items.routes.ts": {
-        "version": "36e7475974239811e3c4e268ca2f6344374d40b95b8e6915dc134f0d25f00773",
+        "version": "f766e1d53968432ecf60524f64277af3da3b5c5ec8a92aeb4ade555a1bf66aeb",
         "signature": "1be6cd9843c46e229f94d357edc0d3f5e2788eec07c61e046bf0aa3ec775c921"
       },
       "./src/modules/items/infra/typeorm/repositories/ItemsRepository.ts": {
-        "version": "7ce61b18ee6af7518c43368a53b09aa783cb730e6f4ff7a35a3684aeb06bc84f",
-        "signature": "7a8d1c591fe1da6f61fc81d0b18272674d1dd825d0d63699e32bf00646e1e917"
-      },
-      "./src/modules/items/services/ListItemsFromCategoryService.ts": {
-        "version": "6eea35d871f6fcaccdc1b8ab5ba519f902f14078c80d9347c74323a0630f00bf",
-        "signature": "d4566019e4cc142ad98da447e74cc4855ad946c2be01e61d0ef330e1c28afd60"
+        "version": "0baed2400e54eec887b758641087c1bdfafb4d6856bc3a8a1cdb0db2a01b0b69",
+        "signature": "03186f9769ad396824e7db26f0660f0181dd7e268a06772a78b64f0794624813"
       },
       "./src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts": {
         "version": "f0b644b2726f7e5f5fb798b5b691f512bc4028b9344326ace61cb48e871beae8",
@@ -1850,11 +1846,11 @@
         "signature": "42291592f865eedf4c7f3af21867bb794d04c10398a7e8c81d87bc9ccebc8df5"
       },
       "./src/modules/users/services/CreateUserService.ts": {
-        "version": "4e8b1f013f3b2f8b1dc122be0706295f2d57730152888e004ff09dbe1da4c741",
-        "signature": "4c613767d5129e178c8983c4b669725da48056a738f07b893ad7224e08cbcd95"
+        "version": "e80ab1e87fd8f429941204e977028d8ccb737670018b5f91a597f89feadd02c8",
+        "signature": "4861ef93a2b4207c0017daf8aa320d1b9b54c9bb408f54f573f5a0b210eb4009"
       },
       "./src/modules/users/infra/http/controllers/UsersController.ts": {
-        "version": "384af12973ac357bae36a435c9512e291ddf6f9871bd1424a8726d762c822bef",
+        "version": "b968beaa3584f27676438246f2def699f660757698feb31530747ee60cebbb96",
         "signature": "0d1577325b2f4943ab2b93a94077462d795f2c5b99a87f78251ddf98d2f7e76e"
       },
       "./src/modules/users/infra/http/routes/password.routes.ts": {
@@ -1866,7 +1862,7 @@
         "signature": "6e93ba7ddd9454bd00cb8d9a029ed6fcea6f6171b4b05b824e92bd59e871eab4"
       },
       "./src/modules/users/infra/http/routes/users.routes.ts": {
-        "version": "d21287b24d564503b15e3f1a4b3ad2530b0098b673460bc2393d883cc828807f",
+        "version": "027a5eac99993293be1efad3872e4a7590ddd0f9666dbff3343d6ccd214126a7",
         "signature": "4c7f841fba7253d29c30d2b86677d4526e40c99cbf915c57b0dea1a88afc79e6"
       },
       "./src/modules/users/infra/typeorm/repositories/UserTokensRepository.ts": {
@@ -1925,17 +1921,45 @@
         "version": "3861522605c2e9c1ca9d6802a90c9968f9c8d9ecca4dbdad4b2732f427e27fe8",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
+      "./src/modules/washers/dtos/ICreateSaveCepDTO.ts": {
+        "version": "9125d08c5e54743b20250f7bfe173baa9f74bd1a89e99f933fc289d75a1ef006",
+        "signature": "e4e6971749b41d2b4c0e5964e1e19da523dabea04884e0946caf587fbcd2af9d"
+      },
       "./src/modules/washers/dtos/ICreateWasherDTO.ts": {
         "version": "f4deb98ea121d9e5c162e997b5e94902b99391497e6d294ddca6c94f15ce58bf",
         "signature": "ea06d15b969d4f9f7b47e4b7d47af2260e824fd0eaae0af4016ad4c6cef68ec1"
       },
+      "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts": {
+        "version": "7ba69472ad647b15f806c73f66bee98845c79d99f8bd7909dc3b2f4e7a19e6af",
+        "signature": "0c3b7fea4b0150b21fbf0aad0e5db81738e78d43766ffd888614683ace97a589"
+      },
+      "./src/modules/washers/repositories/ISaveCepRepository.ts": {
+        "version": "87ef0330b90674000fa3c04c277eaee7d7f868a841ab11b24f33ee9bf0435360",
+        "signature": "5c5c8a71f5051fea971687b845829593f441f5ce3a912c7ee74c85527c3b07f6"
+      },
+      "./src/modules/washers/services/SaveCepSearchService.ts": {
+        "version": "8a7fcb00aabac078921df4d4c43ad21a9f3a2cc629a6bca86cf495a778f89977",
+        "signature": "6c1f0041b317a3f3f5a9e73122ef1e5970497c26624f39b024bf3dfac86dc001"
+      },
+      "./src/modules/washers/infra/http/controllers/SaveCepController.ts": {
+        "version": "5e0291de3a2c9cd85f9976c57ee5b00117fb34ed9a91608e84eba7d0c3592ffd",
+        "signature": "7bcb99517a8f59bd54677ecf4ca67789f4032abb894f9def9eb789b7c9147986"
+      },
       "./src/modules/washers/infra/typeorm/entities/Washer.ts": {
-        "version": "1f34068634d0571f19cb951c3104ccf2d4c21549de5382a8dfbf8c1b0ea0021c",
-        "signature": "5f20fd61d3c434cd2b73bc86a26a4ed88b99d8928ba966a74e96d35982496cfe"
+        "version": "a6c8bef6885a5152643cf747b80237f6f3a53fe2ab070a28d73ce3e0850c2e29",
+        "signature": "8b58cd501b67b62b225f541b17a5a4eae0b566a25384c8b80c26d71a185e01d2"
       },
       "./src/modules/washers/repositories/IWashersRepository.ts": {
-        "version": "f41d9a84b88e8dd49e9cc55db2a14fe2d9d8f9551859fc2135fb55bd8a8099b9",
-        "signature": "247ee046f97ad0f93032fb4f2f2f7c0a8cc11146e0e2fad829ac95940aac3467"
+        "version": "f0f94d6f5d83e193f78c68e81c5e2ce2bdf6c487d61a0d671dc37ebf0737120d",
+        "signature": "421e80c21e11877dfd5cce4dacb97d8edb959962b007d2993393dea1d77da516"
+      },
+      "./src/modules/washers/services/SearchWasherByCep.ts": {
+        "version": "a42db5823c9b42b6fd7669d367db63d0696a1621a877e0fbd557c94ff1385fd7",
+        "signature": "44b15816a95c74c44f2af9b90f6ce1ff2f11580b11a7035cd86ca58464574b62"
+      },
+      "./src/modules/washers/infra/http/controllers/SearchController.ts": {
+        "version": "e431c854f4a1c1b76fcc866bb37b7f301cde6ee0756348ccb43d19cfda518278",
+        "signature": "251a68cf44b0ecb254508c4b96b2e41c5a4937e22805e26cd218881fd1ec23b4"
       },
       "./src/modules/washers/services/CreateWasherService.ts": {
         "version": "94ce0709ad4cb3f7a42a81679750688fbd119af638ed6d357591a4e7ddb65ed2",
@@ -1950,12 +1974,16 @@
         "signature": "17a198d2560432080aa2c52f3b6f95165ff06e9027b76a79ac4c6dd860bc236d"
       },
       "./src/modules/washers/infra/http/routes/washers.routes.ts": {
-        "version": "a275f5fe39c437230df81f2fec2f6f9f6284ee012a318988f85946f2fe98da1d",
+        "version": "4c9becd492957b21826e6d774c170e95e620b681794a4a32317c1863dd669f7e",
         "signature": "806adaaf9435e14e51d41584cbdfa447f7c7f66faab6e6f063b3f05511e6326d"
       },
+      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts": {
+        "version": "d59b0e35eeee26dba46218386d60ddd484d6f0905fff4d80e3a407f4a29e65d4",
+        "signature": "240c32fa182868fdcc3663469692b08364b935ded5c33d47b8a1ad9802e562eb"
+      },
       "./src/modules/washers/infra/typeorm/repositories/WashersRepository.ts": {
-        "version": "e0139c409f75161b158f020da22e4940fcafd671e39096b48972115082344880",
-        "signature": "bc4dbc4b48989bf22abd2f819a6dd0eb44b4eaa812e8ef0ba30a1ef4e006195c"
+        "version": "fec9db727c8e7164ea6ddce9a46c772acc59fb5f4a2ee138d1f07b2c8b0d473f",
+        "signature": "7e3f753a574ace8a9af73e86566a226d174796e77b5f4bac4f889d1e7313b9ce"
       },
       "./src/shared/container/providers/StorageProvider/implementations/DiskStorageProvider.ts": {
         "version": "675a57f32c20f297f341b225fb3a2a52ccf7139964fec533c58f8fca21eed115",
@@ -2046,7 +2074,7 @@
         "signature": "300a075098fb68358bcab68218983c181309adeb20e35935d71deb7509c5f50b"
       },
       "./src/shared/container/index.ts": {
-        "version": "5282593e42498f9e7961d9a9bbdf2836481dac8b1482bd991f8b01956d0c0946",
+        "version": "c9c67dba79c86e127682c279d94286d9e66bf0c216347137467166e430ab4c5e",
         "signature": "6dfbf5ef479c6201d5f6bde293e78071218f0509b2c6ab7598b62ac2ef617bf6"
       },
       "./src/shared/container/providers/MailTemplateProvider/fakes/FakeMailTemplateProvider.ts": {
@@ -2078,7 +2106,7 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "./src/shared/infra/http/server.ts": {
-        "version": "a5ced8a9cb6ced76a118b65db828a256418140548fbf7ec6e6f5e3a0245dfac6",
+        "version": "f164164de07bfe6de05e38688c020018f2c31c9ec9c57ecc508652750110bf92",
         "signature": "6527f48b6f5b23d3c7f90680e47830150bc48a8917904d1cf7db4c3586da9cc2"
       },
       "./src/shared/infra/typeorm/migrations/1587505942723-CreateAppointments.ts": {
@@ -2137,13 +2165,17 @@
         "version": "bb61d7622cc94794c9112b8d95392758727f917fb2c8bc42c68c383a8720f7fb",
         "signature": "d876c93424e2cd89c3afc584e04138b88af4f5cb6ac3180fa6044496590a066b"
       },
-      "./src/shared/infra/typeorm/migrations/1598029063855-CreateCategoryItems.ts": {
-        "version": "2c32a0d7fc2061bc58455d3a5047befe63df91b7d11c0673c2249e14fda0f817",
-        "signature": "e2f35961f72072a9cebefc512b3bded4dcefad0a18f540b163983d52902a1344"
+      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts": {
+        "version": "48418b1ecd1882b22d37c53a3199add4c313f4b62764d3acadf9b44a45ca738a",
+        "signature": "e76f8035e0fa3dbc5ac29e9711a1a2983a76b78b6199dee16936870a778ee8ce"
       },
-      "./src/shared/infra/typeorm/migrations/1598029126262-AddCategoryIdToItems.ts": {
-        "version": "51c8e61698bac51f211a58ea30d4354d1c84e23573cb69b0423484036bf686c5",
-        "signature": "b5ede9509bc1041091ac26847c72a1392c7d5aac6b9cbb8d56d33ce3b3d0abda"
+      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts": {
+        "version": "c04228ef8cd4810667afdfa61138503b0b86ad98f8f407036af08fa2ed7f3d99",
+        "signature": "1b09eaf379a50648878f35bf2aac1d536a6858790fa74653497d60bbd7f0da9f"
+      },
+      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": {
+        "version": "f4cb2f6a02a4374f6273b18161e1ca0909746872661c86e353b6eddb9d514e53",
+        "signature": "b17add775bda39c80b45d7c54f0424826fc3fcf4eee86d0571ddbadff71824e7"
       },
       "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts": {
         "version": "98f705cf8a4c9e60aac4b159ba36a37291ed8f47aadaa0bfe6f073ff7dd77b25",
@@ -2184,6 +2216,10 @@
       "./node_modules/@types/babel__core/index.d.ts": {
         "version": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369",
         "signature": "7df3163944694feeac63067632a8dc2e2dea1350119ec8b43df277af69198369"
+      },
+      "./node_modules/@types/caseless/index.d.ts": {
+        "version": "5343f3c160282dfbaab9af350119a0c3b59b7076ef0117bb5995a66e240dab28",
+        "signature": "5343f3c160282dfbaab9af350119a0c3b59b7076ef0117bb5995a66e240dab28"
       },
       "./node_modules/@types/color-name/index.d.ts": {
         "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
@@ -2264,6 +2300,18 @@
       "./node_modules/@types/prettier/index.d.ts": {
         "version": "9f648f662bddda1b68b01992edd275c214838124a43c8d9210e4a61b974ff82d",
         "signature": "9f648f662bddda1b68b01992edd275c214838124a43c8d9210e4a61b974ff82d"
+      },
+      "./node_modules/@types/request/node_modules/form-data/index.d.ts": {
+        "version": "e91ad231af87f864b3f07cd0e39b1cf6c133988156f087c1c3ccb0a5491c9115",
+        "signature": "e91ad231af87f864b3f07cd0e39b1cf6c133988156f087c1c3ccb0a5491c9115"
+      },
+      "./node_modules/@types/tough-cookie/index.d.ts": {
+        "version": "a6c4cc913246a4f40423d0c6e618239072d7662bd54f6d8b8be59aec55d59873",
+        "signature": "a6c4cc913246a4f40423d0c6e618239072d7662bd54f6d8b8be59aec55d59873"
+      },
+      "./node_modules/@types/request/index.d.ts": {
+        "version": "d3c7c28e24c242c1054c6865bb6704914dfdb212063701c6fb02a8a477d00098",
+        "signature": "d3c7c28e24c242c1054c6865bb6704914dfdb212063701c6fb02a8a477d00098"
       },
       "./node_modules/@types/stack-utils/index.d.ts": {
         "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
@@ -6360,20 +6408,9 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/modules/items/infra/typeorm/entities/Category.ts": [
-        "./node_modules/typeorm/index.d.ts",
-        "./src/modules/items/infra/typeorm/entities/Item.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
       "./src/modules/items/infra/typeorm/entities/Item.ts": [
         "./node_modules/typeorm/index.d.ts",
         "./src/modules/orders/infra/typeorm/entities/OrdersItems.ts",
-        "./src/modules/items/infra/typeorm/entities/Category.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -6397,19 +6434,10 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
       "./src/modules/items/repositories/IItemsRepository.ts": [
         "./src/modules/items/infra/typeorm/entities/Item.ts",
         "./src/modules/items/dtos/ICreateItemDTO.ts",
         "./src/modules/items/dtos/IFindAllItemsDTO.ts",
-        "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -6822,10 +6850,19 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
+      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
       "./src/modules/items/services/CreateItemService.ts": [
-        "./node_modules/typeorm/index.d.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/shared/errors/AppError.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts",
-        "./src/modules/items/infra/typeorm/entities/Category.ts",
+        "./src/modules/items/repositories/IItemsRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -6844,9 +6881,10 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": [
-        "./node_modules/typeorm/index.d.ts",
+      "./src/modules/items/services/ListItemsFromCategoryService.ts": [
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts",
+        "./src/modules/items/repositories/IItemsRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -6854,9 +6892,19 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/modules/items/infra/typeorm/repositories/ListCategoryRepository.ts": [
+      "./src/modules/items/infra/http/controller/ListItemsController.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/modules/items/services/ListItemsFromCategoryService.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": [
         "./node_modules/typeorm/index.d.ts",
-        "./src/modules/items/infra/typeorm/entities/Category.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -6869,8 +6917,8 @@
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/typeorm/index.d.ts",
         "./src/modules/items/infra/http/controller/ItemsController.ts",
+        "./src/modules/items/infra/http/controller/ListItemsController.ts",
         "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts",
-        "./src/modules/items/infra/typeorm/repositories/ListCategoryRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -6882,20 +6930,7 @@
         "./node_modules/typeorm/index.d.ts",
         "./src/modules/items/repositories/IItemsRepository.ts",
         "./src/modules/items/dtos/ICreateItemDTO.ts",
-        "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts",
-        "./src/modules/items/infra/typeorm/entities/Category.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./src/modules/items/services/ListItemsFromCategoryService.ts": [
-        "./node_modules/tsyringe/dist/typings/index.d.ts",
-        "./src/modules/items/infra/typeorm/entities/Item.ts",
-        "./src/modules/items/repositories/IItemsRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -7383,7 +7418,58 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
+      "./src/modules/washers/dtos/ICreateSaveCepDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
       "./src/modules/washers/dtos/ICreateWasherDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/repositories/ISaveCepRepository.ts": [
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/services/SaveCepSearchService.ts": [
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
+        "./src/modules/washers/repositories/ISaveCepRepository.ts",
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SaveCepController.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/@types/express.d.ts",
+        "./src/modules/washers/services/SaveCepSearchService.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -7403,6 +7489,28 @@
       "./src/modules/washers/repositories/IWashersRepository.ts": [
         "./src/modules/washers/infra/typeorm/entities/Washer.ts",
         "./src/modules/washers/dtos/ICreateWasherDTO.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/services/SearchWasherByCep.ts": [
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/modules/washers/infra/typeorm/entities/Washer.ts",
+        "./src/modules/washers/repositories/IWashersRepository.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SearchController.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/modules/washers/services/SearchWasherByCep.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -7448,6 +7556,20 @@
         "./node_modules/typeorm/index.d.ts",
         "./src/modules/washers/infra/http/controllers/WashersController.ts",
         "./src/modules/washers/infra/typeorm/repositories/ListWashersRepository.ts",
+        "./src/modules/washers/infra/http/controllers/SearchController.ts",
+        "./src/modules/washers/infra/http/controllers/SaveCepController.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./src/modules/washers/repositories/ISaveCepRepository.ts",
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -7779,6 +7901,8 @@
         "./src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts",
         "./src/modules/washers/repositories/IWashersRepository.ts",
         "./src/modules/washers/infra/typeorm/repositories/WashersRepository.ts",
+        "./src/modules/washers/repositories/ISaveCepRepository.ts",
+        "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -8005,7 +8129,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/shared/infra/typeorm/migrations/1598029063855-CreateCategoryItems.ts": [
+      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts": [
         "./node_modules/typeorm/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -8014,7 +8138,16 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./src/shared/infra/typeorm/migrations/1598029126262-AddCategoryIdToItems.ts": [
+      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": [
         "./node_modules/typeorm/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -8106,6 +8239,14 @@
         "./node_modules/@types/babel__template/index.d.ts",
         "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts",
         "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/caseless/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -8282,6 +8423,43 @@
       ],
       "./node_modules/@types/prettier/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/request/node_modules/form-data/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/tough-cookie/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/request/index.d.ts": [
+        "./node_modules/@types/caseless/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/request/node_modules/form-data/index.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/tough-cookie/index.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -12263,11 +12441,7 @@
         "./src/modules/appointments/infra/typeorm/entities/Appointment.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts"
       ],
-      "./src/modules/items/infra/typeorm/entities/Category.ts": [
-        "./src/modules/items/infra/typeorm/entities/Item.ts"
-      ],
       "./src/modules/items/infra/typeorm/entities/Item.ts": [
-        "./src/modules/items/infra/typeorm/entities/Category.ts",
         "./src/modules/orders/infra/typeorm/entities/OrdersItems.ts"
       ],
       "./src/modules/items/repositories/IItemsRepository.ts": [
@@ -12432,16 +12606,17 @@
         "./src/modules/appointments/infra/typeorm/entities/Appointment.ts"
       ],
       "./src/modules/items/services/CreateItemService.ts": [
+        "./src/modules/items/repositories/IItemsRepository.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts"
       ],
       "./src/modules/items/infra/http/controller/ItemsController.ts": [
         "./node_modules/@types/express/index.d.ts"
       ],
-      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": [
-        "./src/modules/items/infra/typeorm/entities/Item.ts",
-        "./node_modules/typeorm/index.d.ts"
+      "./src/modules/items/services/ListItemsFromCategoryService.ts": [
+        "./src/modules/items/repositories/IItemsRepository.ts",
+        "./src/modules/items/infra/typeorm/entities/Item.ts"
       ],
-      "./src/modules/items/infra/typeorm/repositories/ListCategoryRepository.ts": [
+      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": [
         "./src/modules/items/infra/typeorm/entities/Item.ts",
         "./node_modules/typeorm/index.d.ts"
       ],
@@ -12452,10 +12627,6 @@
         "./src/modules/items/dtos/ICreateItemDTO.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts",
         "./src/modules/items/repositories/IItemsRepository.ts"
-      ],
-      "./src/modules/items/services/ListItemsFromCategoryService.ts": [
-        "./src/modules/items/repositories/IItemsRepository.ts",
-        "./src/modules/items/infra/typeorm/entities/Item.ts"
       ],
       "./src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts": [
         "./src/modules/notifications/dtos/ICreateNotificationDTO.ts",
@@ -12932,14 +13103,24 @@
       "./src/shared/infra/typeorm/migrations/1595201757117-AddAppointmentIdToOrdersItems.ts": [
         "./node_modules/typeorm/index.d.ts"
       ],
-      "./src/shared/infra/typeorm/migrations/1598029063855-CreateCategoryItems.ts": [
-        "./node_modules/typeorm/index.d.ts"
-      ],
-      "./src/shared/infra/typeorm/migrations/1598029126262-AddCategoryIdToItems.ts": [
-        "./node_modules/typeorm/index.d.ts"
+      "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
       ],
       "./node_modules/@types/babel__generator/index.d.ts": [
         "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/babel__traverse/node_modules/@babel/types/lib/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -12973,9 +13154,25 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
+      "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
       "./node_modules/@types/babel__template/index.d.ts": [
         "./node_modules/@babel/parser/typings/babel-parser.d.ts",
         "./node_modules/@babel/types/lib/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/babel__core/node_modules/@babel/types/lib/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -13212,7 +13409,43 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts": [
+      "./src/modules/items/infra/http/controller/ListItemsController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts": [
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
+        "./src/modules/washers/repositories/ISaveCepRepository.ts"
+      ],
+      "./src/modules/washers/services/SaveCepSearchService.ts": [
+        "./src/modules/washers/repositories/ISaveCepRepository.ts",
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SaveCepController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/modules/washers/repositories/ISaveCepRepository.ts": [
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
+      ],
+      "./src/modules/washers/services/SearchWasherByCep.ts": [
+        "./src/modules/washers/repositories/IWashersRepository.ts",
+        "./src/modules/washers/infra/typeorm/entities/Washer.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SearchController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./node_modules/@types/caseless/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -13220,7 +13453,28 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./node_modules/@types/babel__traverse/node_modules/@babel/types/lib/index.d.ts": [
+      "./node_modules/@types/request/index.d.ts": [
+        "./node_modules/@types/caseless/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/request/node_modules/form-data/index.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/tough-cookie/index.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/request/node_modules/form-data/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -13228,15 +13482,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
-      "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./node_modules/@types/babel__core/node_modules/@babel/types/lib/index.d.ts": [
+      "./node_modules/@types/tough-cookie/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -13246,37 +13492,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "./node_modules/typescript/lib/lib.d.ts",
-      "./node_modules/typescript/lib/lib.es5.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.d.ts",
-      "./node_modules/typescript/lib/lib.es2016.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.d.ts",
-      "./node_modules/typescript/lib/lib.dom.d.ts",
-      "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./node_modules/typescript/lib/lib.scripthost.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.core.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.generator.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.promise.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.object.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.string.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.intl.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.intl.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.promise.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts",
-      "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
-      "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./src/@types/express.d.ts",
       "./src/config/auth.ts",
       "./node_modules/@types/node/globals.d.ts",
@@ -13635,11 +13850,9 @@
       "./src/modules/users/infra/typeorm/entities/User.ts",
       "./src/modules/appointments/infra/typeorm/entities/Appointment.ts",
       "./src/modules/orders/infra/typeorm/entities/OrdersItems.ts",
-      "./src/modules/items/infra/typeorm/entities/Category.ts",
       "./src/modules/items/infra/typeorm/entities/Item.ts",
       "./src/modules/items/dtos/ICreateItemDTO.ts",
       "./src/modules/items/dtos/IFindAllItemsDTO.ts",
-      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts",
       "./src/modules/items/repositories/IItemsRepository.ts",
       "./src/modules/appointments/repositories/IAppointmentsRepository.ts",
       "./src/modules/appointments/services/CreateAppointmentService.ts",
@@ -14223,27 +14436,107 @@
         ]
       ],
       "./src/modules/users/repositories/fakes/FakeUsersRepository.ts",
-      "./src/modules/appointments/services/ListProvidersService.spec.ts",
-      "./src/modules/appointments/services/ListUserOrdersService.ts",
-      "./src/modules/items/services/CreateItemService.ts",
-      "./src/modules/items/infra/http/controller/ItemsController.ts",
-      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts",
-      "./src/modules/items/infra/typeorm/repositories/ListCategoryRepository.ts",
-      "./src/modules/items/infra/http/routes/items.routes.ts",
-      "./src/modules/items/infra/typeorm/repositories/ItemsRepository.ts",
       [
-        "./src/modules/items/services/ListItemsFromCategoryService.ts",
+        "./src/modules/appointments/services/ListProvidersService.spec.ts",
         [
           {
-            "file": "./src/modules/items/services/ListItemsFromCategoryService.ts",
-            "start": 593,
-            "length": 19,
-            "code": 2339,
+            "file": "./src/modules/appointments/services/ListProvidersService.spec.ts",
+            "start": 758,
+            "length": 93,
+            "code": 2345,
             "category": 1,
-            "messageText": "Property 'findByCategoryItems' does not exist on type 'IItemsRepository'."
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/appointments/services/ListProvidersService.spec.ts",
+            "start": 906,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/appointments/services/ListProvidersService.spec.ts",
+            "start": 1059,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
           }
         ]
       ],
+      "./src/modules/appointments/services/ListUserOrdersService.ts",
+      "./src/modules/items/dtos/IFindAllFromCategoryDTO.ts",
+      "./src/modules/items/services/CreateItemService.ts",
+      "./src/modules/items/infra/http/controller/ItemsController.ts",
+      "./src/modules/items/services/ListItemsFromCategoryService.ts",
+      "./src/modules/items/infra/http/controller/ListItemsController.ts",
+      "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts",
+      "./src/modules/items/infra/http/routes/items.routes.ts",
+      "./src/modules/items/infra/typeorm/repositories/ItemsRepository.ts",
       "./src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts",
       "./src/modules/orders/dtos/ICreateOrderDTO.ts",
       "./src/modules/orders/infra/typeorm/entities/Order.ts",
@@ -14304,20 +14597,367 @@
       "./src/modules/users/providers/index.ts",
       "./src/modules/users/providers/HashProvider/fakes/FakeHashProvider.ts",
       "./src/modules/users/repositories/fakes/FakeUserTokensRepository.ts",
-      "./src/modules/users/services/AuthenticateUserService.spec.ts",
-      "./src/modules/users/services/CreateUserService.spec.ts",
-      "./src/modules/users/services/ResetPasswordService.spec.ts",
+      [
+        "./src/modules/users/services/AuthenticateUserService.spec.ts",
+        [
+          {
+            "file": "./src/modules/users/services/AuthenticateUserService.spec.ts",
+            "start": 786,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/AuthenticateUserService.spec.ts",
+            "start": 1470,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
+      [
+        "./src/modules/users/services/CreateUserService.spec.ts",
+        [
+          {
+            "file": "./src/modules/users/services/CreateUserService.spec.ts",
+            "start": 956,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'IRequest'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'IRequest'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/services/CreateUserService.ts",
+                "start": 465,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/CreateUserService.spec.ts",
+            "start": 1219,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'IRequest'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'IRequest'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/services/CreateUserService.ts",
+                "start": 465,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/CreateUserService.spec.ts",
+            "start": 1359,
+            "length": 101,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'IRequest'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'IRequest'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/services/CreateUserService.ts",
+                "start": 465,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
+      [
+        "./src/modules/users/services/ResetPasswordService.spec.ts",
+        [
+          {
+            "file": "./src/modules/users/services/ResetPasswordService.spec.ts",
+            "start": 1016,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/ResetPasswordService.spec.ts",
+            "start": 2251,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
       "./src/shared/container/providers/MailProvider/fakes/FakeMailProvider.ts",
-      "./src/modules/users/services/SendForgotPasswordEmailService.spec.ts",
+      [
+        "./src/modules/users/services/SendForgotPasswordEmailService.spec.ts",
+        [
+          {
+            "file": "./src/modules/users/services/SendForgotPasswordEmailService.spec.ts",
+            "start": 1163,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/SendForgotPasswordEmailService.spec.ts",
+            "start": 1819,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
       "./src/shared/container/providers/StorageProvider/fakes/FakeStorageAvatar.ts",
-      "./src/modules/users/services/UpdateUserAvatarService.spec.ts",
+      [
+        "./src/modules/users/services/UpdateUserAvatarService.spec.ts",
+        [
+          {
+            "file": "./src/modules/users/services/UpdateUserAvatarService.spec.ts",
+            "start": 824,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./src/modules/users/services/UpdateUserAvatarService.spec.ts",
+            "start": 1565,
+            "length": 93,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ name: string; email: string; password: string; }' is not assignable to parameter of type 'ICreateUserDTO'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Property 'whatsapp' is missing in type '{ name: string; email: string; password: string; }' but required in type 'ICreateUserDTO'.",
+                  "category": 1,
+                  "code": 2741
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "./src/modules/users/dtos/ICreateUserDTO.ts",
+                "start": 77,
+                "length": 8,
+                "messageText": "'whatsapp' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          }
+        ]
+      ],
+      "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
       "./src/modules/washers/dtos/ICreateWasherDTO.ts",
+      "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
+      "./src/modules/washers/repositories/ISaveCepRepository.ts",
+      "./src/modules/washers/services/SaveCepSearchService.ts",
+      "./src/modules/washers/infra/http/controllers/SaveCepController.ts",
       "./src/modules/washers/infra/typeorm/entities/Washer.ts",
       "./src/modules/washers/repositories/IWashersRepository.ts",
+      "./src/modules/washers/services/SearchWasherByCep.ts",
+      "./src/modules/washers/infra/http/controllers/SearchController.ts",
       "./src/modules/washers/services/CreateWasherService.ts",
       "./src/modules/washers/infra/http/controllers/WashersController.ts",
       "./src/modules/washers/infra/typeorm/repositories/ListWashersRepository.ts",
       "./src/modules/washers/infra/http/routes/washers.routes.ts",
+      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts",
       "./src/modules/washers/infra/typeorm/repositories/WashersRepository.ts",
       "./src/shared/container/providers/StorageProvider/implementations/DiskStorageProvider.ts",
       "./node_modules/@types/nodemailer/lib/dkim/index.d.ts",
@@ -14364,8 +15004,20 @@
       "./src/shared/infra/typeorm/migrations/1595024057537-AddDeliveryDateInAppointment.ts",
       "./src/shared/infra/typeorm/migrations/1595038599674-CreateWashers.ts",
       "./src/shared/infra/typeorm/migrations/1595201757117-AddAppointmentIdToOrdersItems.ts",
-      "./src/shared/infra/typeorm/migrations/1598029063855-CreateCategoryItems.ts",
-      "./src/shared/infra/typeorm/migrations/1598029126262-AddCategoryIdToItems.ts",
+      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts",
+      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts",
+      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts",
+      "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@types/babel__generator/index.d.ts",
+      "./node_modules/@types/babel__traverse/node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@types/babel__traverse/index.d.ts",
+      "./node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@types/babel__template/index.d.ts",
+      "./node_modules/@types/babel__core/node_modules/@babel/types/lib/index.d.ts",
+      "./node_modules/@types/babel__core/index.d.ts",
+      "./node_modules/@types/caseless/index.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
       "./node_modules/@types/eslint-visitor-keys/index.d.ts",
       "./node_modules/@types/graceful-fs/index.d.ts",
@@ -14386,21 +15038,45 @@
       "./node_modules/@types/json5/index.d.ts",
       "./node_modules/@types/normalize-package-data/index.d.ts",
       "./node_modules/@types/prettier/index.d.ts",
+      "./node_modules/@types/request/node_modules/form-data/index.d.ts",
+      "./node_modules/@types/tough-cookie/index.d.ts",
+      "./node_modules/@types/request/index.d.ts",
       "./node_modules/@types/stack-utils/index.d.ts",
       "./node_modules/@types/strip-bom/index.d.ts",
       "./node_modules/@types/strip-json-comments/index.d.ts",
       "./node_modules/@types/yargs-parser/index.d.ts",
       "./node_modules/@types/yargs/index.d.ts",
-      "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts",
-      "./node_modules/@types/babel__traverse/index.d.ts",
-      "./node_modules/@types/babel__generator/index.d.ts",
-      "./node_modules/@types/babel__traverse/node_modules/@babel/types/lib/index.d.ts",
-      "./node_modules/@babel/types/lib/index.d.ts",
-      "./node_modules/@babel/parser/typings/babel-parser.d.ts",
-      "./node_modules/@types/babel__template/node_modules/@babel/types/lib/index.d.ts",
-      "./node_modules/@types/babel__core/node_modules/@babel/types/lib/index.d.ts",
-      "./node_modules/@types/babel__template/index.d.ts",
-      "./node_modules/@types/babel__core/index.d.ts"
+      "./node_modules/typescript/lib/lib.d.ts",
+      "./node_modules/typescript/lib/lib.es5.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.d.ts",
+      "./node_modules/typescript/lib/lib.dom.d.ts",
+      "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "./node_modules/typescript/lib/lib.scripthost.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "./node_modules/typescript/lib/lib.esnext.intl.d.ts"
     ]
   },
   "version": "3.8.3"

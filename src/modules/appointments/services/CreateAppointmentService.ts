@@ -28,6 +28,7 @@ interface IItem {
   id: string;
   weight: number;
   quantity: number;
+  ironing: boolean;
 }
 
 /**
@@ -124,8 +125,10 @@ class CreateAppointmentService {
     const serializedItems = items.map(item => ({
       item_id: item.id,
       quantity: item.quantity,
+      ironing: item.ironing,
       weight: item.weight,
-      price: existentItems.filter(p => p.id === item.id)[0].price,
+      price:
+        existentItems.filter(p => p.id === item.id)[0].price * item.quantity,
     }));
 
     const appointment = await this.appointmentsRepository.create({
