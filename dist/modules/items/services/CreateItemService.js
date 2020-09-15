@@ -53,11 +53,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var tsyringe_1 = require("tsyringe");
 var AppError_1 = __importDefault(require("@shared/errors/AppError"));
-var CreateWasherService = /** @class */ (function () {
-    function CreateWasherService(itemsRepository) {
+var CreateItemsService = /** @class */ (function () {
+    function CreateItemsService(itemsRepository) {
         this.itemsRepository = itemsRepository;
     }
-    CreateWasherService.prototype.execute = function (_a) {
+    CreateItemsService.prototype.execute = function (_a) {
         var name = _a.name, category = _a.category, price = _a.price, weight = _a.weight;
         return __awaiter(this, void 0, void 0, function () {
             var itemExists, item;
@@ -82,11 +82,11 @@ var CreateWasherService = /** @class */ (function () {
             });
         });
     };
-    CreateWasherService = __decorate([
+    CreateItemsService = __decorate([
         tsyringe_1.injectable(),
         __param(0, tsyringe_1.inject('ItemsRepository')),
         __metadata("design:paramtypes", [Object])
-    ], CreateWasherService);
-    return CreateWasherService;
+    ], CreateItemsService);
+    return CreateItemsService;
 }());
-exports.default = CreateWasherService;
+exports.default = CreateItemsService;

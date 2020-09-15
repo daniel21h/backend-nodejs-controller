@@ -1554,8 +1554,8 @@
         "signature": "59ee2bd9522bd6d3c6a2c354c899862db24c05a7ef6318ef732a2cbb92c370e3"
       },
       "./src/modules/orders/infra/typeorm/entities/OrdersItems.ts": {
-        "version": "aa1b1ca6f69149f190d62228061c4f274b94e6a3b7fa894a14933db6a3bed8f4",
-        "signature": "34b9e8308302b9a23b6ad1346a1b17917d43aed29d9bda2e488bb8a3433b1155"
+        "version": "9bbf34037d56f7508536d6ac0565aecf6f9d763fbf5a659a311fe9f7fea75137",
+        "signature": "fa877f906e4b5e730721e6a2046b79fe1b5f778678eb3c0cc5b561070a42712e"
       },
       "./src/modules/items/infra/typeorm/entities/Item.ts": {
         "version": "cd84aae81a699ebd4a74b9f8c7e38eb52129a03cc7daf97bc61ee5dd557a7ef0",
@@ -1578,8 +1578,8 @@
         "signature": "dcdf0439e1f1892f43d8842770629f87ff0dbd2630711c0c81f613c19a0a8dea"
       },
       "./src/modules/appointments/services/CreateAppointmentService.ts": {
-        "version": "f23e5ec34252e704d67f0700b8420903f9899d2edb115953461453e14aae5e22",
-        "signature": "b9ba5160fd902afcd8b9821b7d590cfc8045a28abb3709ce746ffa00f9f3275d"
+        "version": "82ca511cd5edef0a7025d8e21f9493dd89a78c90fce7df865ad61b0eff746bb9",
+        "signature": "a20568755593d290bc733e8a3a7dabdd05dd23504f5a048dfc477e0453faac47"
       },
       "./src/modules/appointments/infra/http/controllers/AppointmentsController.ts": {
         "version": "3f5e5927bbf6667a1e6202af67d298e75aaec35d223908deb80cfc3787307763",
@@ -1722,8 +1722,8 @@
         "signature": "a51ba9905cd346e4aa61c4f13f2999d96f6c60124468e86f93b5a4ee694c8816"
       },
       "./src/modules/items/services/CreateItemService.ts": {
-        "version": "212b2068390b7b4f39fa83f3d9b561c399a06ed404e006596aafa7686d0caf7e",
-        "signature": "e05c244678c641534fdbdd7d60edc00b39ee1bf63dbc005c54b237b1dafbec39"
+        "version": "dfc70ce1554c1ef7a1dd3d112a8e0a9a455e77a2ef122728c647b60e620ecfd0",
+        "signature": "0f49ad8e2e952d055015075806caf1ecbb31caad9dd4efa4dfc1f3311f93019d"
       },
       "./src/modules/items/infra/http/controller/ItemsController.ts": {
         "version": "765e7cee9437b5583254dbab4b04ed7d03e0ba24336a2675b72de09fff09e60c",
@@ -1784,6 +1784,54 @@
       "./src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts": {
         "version": "356325a2754f1e8f78c7ca756ed944338348f27557f5a61f422a1ed8c92b6ff4",
         "signature": "32723d674d84ec36ad9f0b3857c4e82eea147589c6a25210f104d7d2ab4f6b0f"
+      },
+      "./src/modules/shipping/dtos/ICreateShippingDTO.ts": {
+        "version": "149a423a81711a279aa770d4812d5d94c88859c692be648411f8b8434f4f4721",
+        "signature": "997f439b9a47385479be9153724a82430ec54c8dbda463b13531aab6ac64c4e6"
+      },
+      "./src/modules/shipping/dtos/IFindAllByRegionDTO.ts": {
+        "version": "5f3ae31067c3dfb2cb91dd5fa6906b8411121c37acbaf7b747f650e76f90726e",
+        "signature": "fc0d5f0cd123851a108ea1a3dbee2b9f563848c357baa37dad648920b1f59b6e"
+      },
+      "./src/modules/shipping/dtos/IFindAllItemsDTO.ts": {
+        "version": "353299d5b90121eef1dec61f0d28fe6ad4c1efbe12f9e19417ac810479377b68",
+        "signature": "199e2d79061a198b8b0e0cbeb0f174bc6809d339a8b30cedb9dae201df830b9a"
+      },
+      "./src/modules/shipping/infra/http/controller/ListShippingsController.ts": {
+        "version": "04e345933168e7cb6b60dfcf0f5d519469c3578e038f6dc99cb5ed31e47f3d63",
+        "signature": "251a68cf44b0ecb254508c4b96b2e41c5a4937e22805e26cd218881fd1ec23b4"
+      },
+      "./src/modules/shipping/infra/typeorm/entities/Shipping.ts": {
+        "version": "30f43c5a8ba866c3b77c8da2cfaf563b6289f33025f0fd7fe9a0a05f0a774fae",
+        "signature": "c2b4f7e0e9fad75f943d6900e6f36a8f8f4c764854d230976b75f2b80881173d"
+      },
+      "./src/modules/shipping/repositories/IShippingRepository.ts": {
+        "version": "d8c29f0b7cc20f2d7bb98e9066fdfce20f28fd31bdb043f9f617e65f44f6224e",
+        "signature": "bab8c58a32fd0eea03b9dd1776b4c52d237459ef03aac3fca41e2ea8e1cee779"
+      },
+      "./src/modules/shipping/services/CreateShippingService.ts": {
+        "version": "70962116f862d6c56079144920fd4e99cc4f251298851693506ee1063c84f432",
+        "signature": "3077be185e70f5b962408abfd86f98a0bf5e3e3de244fb2435fa9b73c446b46c"
+      },
+      "./src/modules/shipping/infra/http/controller/ShippingController.ts": {
+        "version": "3d17e32dd4df17efb24165688bfd857e42e306eddeef445d11c8899cd16814dd",
+        "signature": "e6489b7c34efdd1bb49351ee13eab07d2bbb5ddb23b071240be70229a7e13f6d"
+      },
+      "./src/modules/shipping/infra/typeorm/repositories/ListShippingsRepository.ts": {
+        "version": "6c3ad41dea86116e973134cd01eebbba25884065298605371c33802bb970d307",
+        "signature": "b90e9003a3973414b04d21019dea26c332d528873f75eadf2ed8bc6c77765427"
+      },
+      "./src/modules/shipping/infra/http/routes/shipping.routes.ts": {
+        "version": "33d338e43cebe2542f349b56fe3ca9bf6728465fb8d7896aa3b51eb191c9bc24",
+        "signature": "1be6cd9843c46e229f94d357edc0d3f5e2788eec07c61e046bf0aa3ec775c921"
+      },
+      "./src/modules/shipping/infra/typeorm/repositories/ShippingRepository.ts": {
+        "version": "9cd6d35708bcca7c3d4aa8a90ce89eba7b177748bc49aef84ceb4e681c8eaadb",
+        "signature": "e0e1de590e56286fef4ccf6c9b393a16728837bbabe05ef1ee3edfe0cdbaa5ac"
+      },
+      "./src/modules/shipping/services/ListShippingByCEPService.ts": {
+        "version": "5122a01274387f1121f0d10d410cef35177fdb8b7758f4daedf50f575a9ff9f6",
+        "signature": "807f05566761cd40d5980caa2bdae4443a90a55eaa76ccd25bbb92ca056efb5b"
       },
       "./src/shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO.ts": {
         "version": "eac6804be6fa78ae1c72efbf568d6e285f05a1342229e6571e75e18e36ff73bb",
@@ -1942,7 +1990,7 @@
         "signature": "6c1f0041b317a3f3f5a9e73122ef1e5970497c26624f39b024bf3dfac86dc001"
       },
       "./src/modules/washers/infra/http/controllers/SaveCepController.ts": {
-        "version": "5e0291de3a2c9cd85f9976c57ee5b00117fb34ed9a91608e84eba7d0c3592ffd",
+        "version": "097311a4d412749b5a2133cf038bdd47cba3b168a74877a76f4d423b697bdad5",
         "signature": "7bcb99517a8f59bd54677ecf4ca67789f4032abb894f9def9eb789b7c9147986"
       },
       "./src/modules/washers/infra/typeorm/entities/Washer.ts": {
@@ -2074,7 +2122,7 @@
         "signature": "300a075098fb68358bcab68218983c181309adeb20e35935d71deb7509c5f50b"
       },
       "./src/shared/container/index.ts": {
-        "version": "c9c67dba79c86e127682c279d94286d9e66bf0c216347137467166e430ab4c5e",
+        "version": "f3b20e448a030db68e54b257729cba5677165de5a40f45cfe751dc9484b31fbe",
         "signature": "6dfbf5ef479c6201d5f6bde293e78071218f0509b2c6ab7598b62ac2ef617bf6"
       },
       "./src/shared/container/providers/MailTemplateProvider/fakes/FakeMailTemplateProvider.ts": {
@@ -2098,7 +2146,7 @@
         "signature": "7a3db937202f50d9f45f03167384ea98f7c0f9785de6ab5c97606c6a2d48a63a"
       },
       "./src/shared/infra/http/routes/index.ts": {
-        "version": "3b6c8a28c14caf0e74bf4c08960305bd2e28c80e88995272b47e38fba711daa9",
+        "version": "c0a1e103f4698161526a582827cb093fcbccf5061dd0540a2f6d1e7cc5f1dacc",
         "signature": "1dd5314c27b80aa768efadf0e0e993bc638f57e905e1f0f7c1139892afa95482"
       },
       "./src/shared/infra/typeorm/index.ts": {
@@ -2142,7 +2190,7 @@
         "signature": "13df27de77c8c862c6e94ed33df74b93428b4d6f86aa7a57d7ec27fe5791fe6b"
       },
       "./src/shared/infra/typeorm/migrations/1594992640809-CreateOrdersItems.ts": {
-        "version": "52950de0f414abd50f64154c20d873fe9b782cdd3a57f02de97d6499e06226da",
+        "version": "24735d745d881f01a4277d625dd35847cf147e7c7dff83cd382aa5f9ec682a50",
         "signature": "87f59bf0c52601214d945aab10346c34ab4848e0cf94fbfa398d3160f168d8bc"
       },
       "./src/shared/infra/typeorm/migrations/1594993032062-AddUserIdToOrders.ts": {
@@ -2154,7 +2202,7 @@
         "signature": "1f9544651c1dca3dff30deb9701b62cd20c1692a2e948114752aa1ba42b0a640"
       },
       "./src/shared/infra/typeorm/migrations/1595024057537-AddDeliveryDateInAppointment.ts": {
-        "version": "4206dd17101d529e3ebaf14b4b66112f48d689f719e8ca3c8a7d9ae76cffde00",
+        "version": "2d9254c888a7d90c50c48cac0f46ded544ae181731b452dcdebcd95b44f42ade",
         "signature": "761179d55b48be3464201a245485619e9ffd791b642d5f4d17eeca50724e4df2"
       },
       "./src/shared/infra/typeorm/migrations/1595038599674-CreateWashers.ts": {
@@ -2176,6 +2224,10 @@
       "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": {
         "version": "f4cb2f6a02a4374f6273b18161e1ca0909746872661c86e353b6eddb9d514e53",
         "signature": "b17add775bda39c80b45d7c54f0424826fc3fcf4eee86d0571ddbadff71824e7"
+      },
+      "./src/shared/infra/typeorm/migrations/1599670687122-CreateShipping.ts": {
+        "version": "d377fa7c2f7e3c48e8346fa0212ae89f78fe10821a421ef79816e40085b4d519",
+        "signature": "908f156a1b54325db52718d41ad9f8edf92fadd3bdf0cc6a49f870c5c23be3c3"
       },
       "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts": {
         "version": "98f705cf8a4c9e60aac4b159ba36a37291ed8f47aadaa0bfe6f073ff7dd77b25",
@@ -7039,6 +7091,131 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
+      "./src/modules/shipping/dtos/ICreateShippingDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/dtos/IFindAllByRegionDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/dtos/IFindAllItemsDTO.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/http/controller/ListShippingsController.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/@types/express.d.ts",
+        "./src/modules/items/services/ListItemsFromCategoryService.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/typeorm/entities/Shipping.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/repositories/IShippingRepository.ts": [
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./src/modules/shipping/dtos/ICreateShippingDTO.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/services/CreateShippingService.ts": [
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/http/controller/ShippingController.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./src/@types/express.d.ts",
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/modules/shipping/services/CreateShippingService.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/typeorm/repositories/ListShippingsRepository.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/http/routes/shipping.routes.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/typeorm/index.d.ts",
+        "./src/modules/shipping/infra/http/controller/ShippingController.ts",
+        "./src/modules/shipping/infra/http/controller/ListShippingsController.ts",
+        "./src/modules/shipping/infra/typeorm/repositories/ListShippingsRepository.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/infra/typeorm/repositories/ShippingRepository.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./src/modules/shipping/dtos/ICreateShippingDTO.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/modules/shipping/services/ListShippingByCEPService.ts": [
+        "./node_modules/tsyringe/dist/typings/index.d.ts",
+        "./src/shared/errors/AppError.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
       "./src/shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -7903,6 +8080,8 @@
         "./src/modules/washers/infra/typeorm/repositories/WashersRepository.ts",
         "./src/modules/washers/repositories/ISaveCepRepository.ts",
         "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts",
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./src/modules/shipping/infra/typeorm/repositories/ShippingRepository.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -7967,6 +8146,7 @@
         "./src/modules/users/infra/http/routes/sessions.routes.ts",
         "./src/modules/users/infra/http/routes/password.routes.ts",
         "./src/modules/items/infra/http/routes/items.routes.ts",
+        "./src/modules/shipping/infra/http/routes/shipping.routes.ts",
         "./src/modules/orders/infra/http/routes/orders.routes.ts",
         "./src/modules/washers/infra/http/routes/washers.routes.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -8148,6 +8328,15 @@
         "./node_modules/date-fns/typings.d.ts"
       ],
       "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": [
+        "./node_modules/typeorm/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1599670687122-CreateShipping.ts": [
         "./node_modules/typeorm/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -12616,6 +12805,9 @@
         "./src/modules/items/repositories/IItemsRepository.ts",
         "./src/modules/items/infra/typeorm/entities/Item.ts"
       ],
+      "./src/modules/items/infra/http/controller/ListItemsController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
       "./src/modules/items/infra/typeorm/repositories/ListItemsRepository.ts": [
         "./src/modules/items/infra/typeorm/entities/Item.ts",
         "./node_modules/typeorm/index.d.ts"
@@ -12664,6 +12856,36 @@
         "./src/modules/orders/dtos/ICreateOrderDTO.ts",
         "./src/modules/orders/infra/typeorm/entities/Order.ts",
         "./src/modules/orders/repositories/IOrdersRepository.ts"
+      ],
+      "./src/modules/shipping/infra/http/controller/ListShippingsController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/modules/shipping/repositories/IShippingRepository.ts": [
+        "./src/modules/shipping/dtos/ICreateShippingDTO.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts"
+      ],
+      "./src/modules/shipping/services/CreateShippingService.ts": [
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts"
+      ],
+      "./src/modules/shipping/infra/http/controller/ShippingController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
+      "./src/modules/shipping/infra/typeorm/repositories/ListShippingsRepository.ts": [
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/modules/shipping/infra/http/routes/shipping.routes.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "./src/modules/shipping/infra/typeorm/repositories/ShippingRepository.ts": [
+        "./src/modules/shipping/dtos/ICreateShippingDTO.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+        "./src/modules/shipping/repositories/IShippingRepository.ts"
+      ],
+      "./src/modules/shipping/services/ListShippingByCEPService.ts": [
+        "./src/modules/shipping/repositories/IShippingRepository.ts",
+        "./src/modules/shipping/infra/typeorm/entities/Shipping.ts"
       ],
       "./src/shared/container/providers/MailProvider/dtos/ISendMailDTO.ts": [
         "./src/shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO.ts"
@@ -12759,9 +12981,28 @@
       "./src/shared/container/providers/StorageProvider/fakes/FakeStorageAvatar.ts": [
         "./src/shared/container/providers/StorageProvider/models/IStorageProvider.ts"
       ],
+      "./src/modules/washers/repositories/ISaveCepRepository.ts": [
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
+      ],
+      "./src/modules/washers/services/SaveCepSearchService.ts": [
+        "./src/modules/washers/repositories/ISaveCepRepository.ts",
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SaveCepController.ts": [
+        "./node_modules/@types/express/index.d.ts"
+      ],
       "./src/modules/washers/repositories/IWashersRepository.ts": [
         "./src/modules/washers/dtos/ICreateWasherDTO.ts",
         "./src/modules/washers/infra/typeorm/entities/Washer.ts"
+      ],
+      "./src/modules/washers/services/SearchWasherByCep.ts": [
+        "./src/modules/washers/repositories/IWashersRepository.ts",
+        "./src/modules/washers/infra/typeorm/entities/Washer.ts"
+      ],
+      "./src/modules/washers/infra/http/controllers/SearchController.ts": [
+        "./node_modules/@types/express/index.d.ts"
       ],
       "./src/modules/washers/services/CreateWasherService.ts": [
         "./src/modules/washers/repositories/IWashersRepository.ts",
@@ -12776,6 +13017,11 @@
       ],
       "./src/modules/washers/infra/http/routes/washers.routes.ts": [
         "./node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts": [
+        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
+        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
+        "./src/modules/washers/repositories/ISaveCepRepository.ts"
       ],
       "./src/modules/washers/infra/typeorm/repositories/WashersRepository.ts": [
         "./src/modules/washers/dtos/ICreateWasherDTO.ts",
@@ -13103,6 +13349,18 @@
       "./src/shared/infra/typeorm/migrations/1595201757117-AddAppointmentIdToOrdersItems.ts": [
         "./node_modules/typeorm/index.d.ts"
       ],
+      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
+      "./src/shared/infra/typeorm/migrations/1599670687122-CreateShipping.ts": [
+        "./node_modules/typeorm/index.d.ts"
+      ],
       "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -13186,6 +13444,14 @@
         "./node_modules/@types/babel__template/index.d.ts",
         "./node_modules/@babel/types/lib/index.d.ts",
         "./node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/caseless/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/graceful-fs/index.d.ts",
@@ -13368,6 +13634,43 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
       ],
+      "./node_modules/@types/request/node_modules/form-data/index.d.ts": [
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/tough-cookie/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
+      "./node_modules/@types/request/index.d.ts": [
+        "./node_modules/@types/caseless/index.d.ts",
+        "./node_modules/@types/node/stream.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/https.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/request/node_modules/form-data/index.d.ts",
+        "./node_modules/@types/node/net.d.ts",
+        "./node_modules/@types/tough-cookie/index.d.ts",
+        "./node_modules/@types/node/url.d.ts",
+        "./node_modules/@types/node/tls.d.ts",
+        "./node_modules/@types/node/ts3.2/index.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/graceful-fs/index.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/date-fns/typings.d.ts"
+      ],
       "./node_modules/@types/stack-utils/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -13408,90 +13711,40 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./src/modules/items/infra/http/controller/ListItemsController.ts": [
-        "./node_modules/@types/express/index.d.ts"
-      ],
-      "./src/modules/washers/infra/typeorm/repositories/SaveCepRepository.ts": [
-        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
-        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts",
-        "./src/modules/washers/repositories/ISaveCepRepository.ts"
-      ],
-      "./src/modules/washers/services/SaveCepSearchService.ts": [
-        "./src/modules/washers/repositories/ISaveCepRepository.ts",
-        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
-        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
-      ],
-      "./src/modules/washers/infra/http/controllers/SaveCepController.ts": [
-        "./node_modules/@types/express/index.d.ts"
-      ],
-      "./src/modules/washers/repositories/ISaveCepRepository.ts": [
-        "./src/modules/washers/dtos/ICreateSaveCepDTO.ts",
-        "./src/modules/washers/infra/typeorm/entities/SaveCepSearch.ts"
-      ],
-      "./src/modules/washers/services/SearchWasherByCep.ts": [
-        "./src/modules/washers/repositories/IWashersRepository.ts",
-        "./src/modules/washers/infra/typeorm/entities/Washer.ts"
-      ],
-      "./src/modules/washers/infra/http/controllers/SearchController.ts": [
-        "./node_modules/@types/express/index.d.ts"
-      ],
-      "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts": [
-        "./node_modules/typeorm/index.d.ts"
-      ],
-      "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts": [
-        "./node_modules/typeorm/index.d.ts"
-      ],
-      "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts": [
-        "./node_modules/typeorm/index.d.ts"
-      ],
-      "./node_modules/@types/caseless/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./node_modules/@types/request/index.d.ts": [
-        "./node_modules/@types/caseless/index.d.ts",
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/node/http.d.ts",
-        "./node_modules/@types/node/https.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/request/node_modules/form-data/index.d.ts",
-        "./node_modules/@types/node/net.d.ts",
-        "./node_modules/@types/tough-cookie/index.d.ts",
-        "./node_modules/@types/node/url.d.ts",
-        "./node_modules/@types/node/tls.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./node_modules/@types/request/node_modules/form-data/index.d.ts": [
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/@types/node/http.d.ts",
-        "./node_modules/@types/node/ts3.2/index.d.ts",
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
-      ],
-      "./node_modules/@types/tough-cookie/index.d.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/graceful-fs/index.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/date-fns/typings.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "./node_modules/typescript/lib/lib.d.ts",
+      "./node_modules/typescript/lib/lib.es5.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.d.ts",
+      "./node_modules/typescript/lib/lib.dom.d.ts",
+      "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "./node_modules/typescript/lib/lib.scripthost.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./src/@types/express.d.ts",
       "./src/config/auth.ts",
       "./node_modules/@types/node/globals.d.ts",
@@ -13919,7 +14172,7 @@
             "relatedInformation": [
               {
                 "file": "./src/modules/appointments/services/CreateAppointmentService.ts",
-                "start": 1405,
+                "start": 1425,
                 "length": 72,
                 "messageText": "An argument for 'itemsRepository' was not provided.",
                 "category": 3,
@@ -14570,6 +14823,35 @@
       ],
       "./src/modules/orders/infra/http/routes/orders.routes.ts",
       "./src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts",
+      "./src/modules/shipping/dtos/ICreateShippingDTO.ts",
+      "./src/modules/shipping/dtos/IFindAllByRegionDTO.ts",
+      "./src/modules/shipping/dtos/IFindAllItemsDTO.ts",
+      [
+        "./src/modules/shipping/infra/http/controller/ListShippingsController.ts",
+        [
+          {
+            "file": "./src/modules/shipping/infra/http/controller/ListShippingsController.ts",
+            "start": 664,
+            "length": 33,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type '{ neighborhood: any; }' is not assignable to parameter of type 'IRequest'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Object literal may only specify known properties, and 'neighborhood' does not exist in type 'IRequest'.",
+                  "category": 1,
+                  "code": 2353
+                }
+              ]
+            }
+          }
+        ]
+      ],
+      "./src/modules/shipping/infra/typeorm/entities/Shipping.ts",
+      "./src/modules/shipping/infra/typeorm/repositories/ListShippingsRepository.ts",
       "./src/shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO.ts",
       "./src/shared/container/providers/MailProvider/dtos/ISendMailDTO.ts",
       "./src/shared/container/providers/MailProvider/models/IMailProvider.ts",
@@ -14981,7 +15263,6 @@
       "./src/shared/container/providers/CacheProvider/implementations/RedisCacheProvider.ts",
       "./src/shared/container/providers/CacheProvider/index.ts",
       "./src/shared/container/providers/index.ts",
-      "./src/shared/container/index.ts",
       "./src/shared/container/providers/MailTemplateProvider/fakes/FakeMailTemplateProvider.ts",
       "./node_modules/@types/cors/index.d.ts",
       "./node_modules/@types/redis/ts3.1/index.d.ts",
@@ -14989,7 +15270,6 @@
       "./src/shared/infra/http/middlewares/rateLimiter.ts",
       "./src/shared/infra/http/routes/index.ts",
       "./src/shared/infra/typeorm/index.ts",
-      "./src/shared/infra/http/server.ts",
       "./src/shared/infra/typeorm/migrations/1587505942723-CreateAppointments.ts",
       "./src/shared/infra/typeorm/migrations/1587558598448-CreateUsers.ts",
       "./src/shared/infra/typeorm/migrations/1587560996386-AlterProviderFieldToProviderId.ts",
@@ -15007,6 +15287,7 @@
       "./src/shared/infra/typeorm/migrations/1598964772081-AddCategoryToItems.ts",
       "./src/shared/infra/typeorm/migrations/1598964938881-AddWhatsappToUsers.ts",
       "./src/shared/infra/typeorm/migrations/1598979203386-SaveCepSearch.ts",
+      "./src/shared/infra/typeorm/migrations/1599670687122-CreateShipping.ts",
       "./node_modules/@types/babel__generator/node_modules/@babel/types/lib/index.d.ts",
       "./node_modules/@types/babel__generator/index.d.ts",
       "./node_modules/@types/babel__traverse/node_modules/@babel/types/lib/index.d.ts",
@@ -15046,37 +15327,14 @@
       "./node_modules/@types/strip-json-comments/index.d.ts",
       "./node_modules/@types/yargs-parser/index.d.ts",
       "./node_modules/@types/yargs/index.d.ts",
-      "./node_modules/typescript/lib/lib.d.ts",
-      "./node_modules/typescript/lib/lib.es5.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.d.ts",
-      "./node_modules/typescript/lib/lib.es2016.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.d.ts",
-      "./node_modules/typescript/lib/lib.dom.d.ts",
-      "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./node_modules/typescript/lib/lib.scripthost.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.core.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.generator.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.iterable.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.promise.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.proxy.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.reflect.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.symbol.d.ts",
-      "./node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "./node_modules/typescript/lib/lib.es2016.array.include.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.object.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.string.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.intl.d.ts",
-      "./node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.intl.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.promise.d.ts",
-      "./node_modules/typescript/lib/lib.es2018.regexp.d.ts",
-      "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
-      "./node_modules/typescript/lib/lib.esnext.intl.d.ts"
+      "./src/modules/shipping/repositories/IShippingRepository.ts",
+      "./src/shared/container/index.ts",
+      "./src/modules/shipping/services/ListShippingByCEPService.ts",
+      "./src/modules/shipping/infra/typeorm/repositories/ShippingRepository.ts",
+      "./src/modules/shipping/services/CreateShippingService.ts",
+      "./src/modules/shipping/infra/http/controller/ShippingController.ts",
+      "./src/modules/shipping/infra/http/routes/shipping.routes.ts",
+      "./src/shared/infra/http/server.ts"
     ]
   },
   "version": "3.8.3"

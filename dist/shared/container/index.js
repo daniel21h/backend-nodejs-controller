@@ -15,6 +15,7 @@ var ItemsRepository_1 = __importDefault(require("@modules/items/infra/typeorm/re
 var OrdersRepository_1 = __importDefault(require("@modules/orders/infra/typeorm/repositories/OrdersRepository"));
 var WashersRepository_1 = __importDefault(require("@modules/washers/infra/typeorm/repositories/WashersRepository"));
 var SaveCepRepository_1 = __importDefault(require("@modules/washers/infra/typeorm/repositories/SaveCepRepository"));
+var ShippingRepository_1 = __importDefault(require("@modules/shipping/infra/typeorm/repositories/ShippingRepository"));
 tsyringe_1.container.registerSingleton('AppointmentsRepository', AppointmentsRepository_1.default);
 tsyringe_1.container.registerSingleton('UsersRepository', UsersRepository_1.default);
 tsyringe_1.container.registerSingleton('UserTokensRepository', UserTokensRepository_1.default);
@@ -23,3 +24,4 @@ tsyringe_1.container.registerSingleton('ItemsRepository', ItemsRepository_1.defa
 tsyringe_1.container.registerSingleton('OrdersRepository', OrdersRepository_1.default);
 tsyringe_1.container.registerSingleton('WashersRepository', WashersRepository_1.default);
 tsyringe_1.container.registerSingleton('SaveCepRepository', SaveCepRepository_1.default);
+tsyringe_1.container.registerSingleton('ShippingRepository', ShippingRepository_1.default);

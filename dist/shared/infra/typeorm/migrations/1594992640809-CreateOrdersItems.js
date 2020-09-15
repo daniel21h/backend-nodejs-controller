@@ -65,6 +65,11 @@ var CreateOrdersItems1594992640809 = /** @class */ (function () {
                                     type: 'int',
                                 },
                                 {
+                                    name: 'ironing',
+                                    type: 'varchar',
+                                    isNullable: true,
+                                },
+                                {
                                     name: 'created_at',
                                     type: 'timestamp',
                                     default: 'now()',

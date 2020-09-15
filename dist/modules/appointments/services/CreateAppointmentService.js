@@ -115,8 +115,9 @@ var CreateAppointmentService = /** @class */ (function () {
                         serializedItems = items.map(function (item) { return ({
                             item_id: item.id,
                             quantity: item.quantity,
+                            ironing: item.ironing,
                             weight: item.weight,
-                            price: existentItems.filter(function (p) { return p.id === item.id; })[0].price,
+                            price: existentItems.filter(function (p) { return p.id === item.id; })[0].price * item.quantity,
                         }); });
                         return [4 /*yield*/, this.appointmentsRepository.create({
                                 provider_id: provider_id,

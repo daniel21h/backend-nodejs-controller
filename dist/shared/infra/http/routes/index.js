@@ -10,6 +10,7 @@ var users_routes_1 = __importDefault(require("@modules/users/infra/http/routes/u
 var sessions_routes_1 = __importDefault(require("@modules/users/infra/http/routes/sessions.routes"));
 var password_routes_1 = __importDefault(require("@modules/users/infra/http/routes/password.routes"));
 var items_routes_1 = __importDefault(require("@modules/items/infra/http/routes/items.routes"));
+var shipping_routes_1 = __importDefault(require("@modules/shipping/infra/http/routes/shipping.routes"));
 var orders_routes_1 = __importDefault(require("@modules/orders/infra/http/routes/orders.routes"));
 var washers_routes_1 = __importDefault(require("@modules/washers/infra/http/routes/washers.routes"));
 var routes = express_1.Router();
@@ -19,6 +20,7 @@ routes.use('/users', users_routes_1.default);
 routes.use('/sessions', sessions_routes_1.default);
 routes.use('/password', password_routes_1.default);
 routes.use('/items', items_routes_1.default);
+routes.use('/shipping', shipping_routes_1.default);
 routes.use('/orders', orders_routes_1.default);
 routes.use('/washers', washers_routes_1.default);
 exports.default = routes;

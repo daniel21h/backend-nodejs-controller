@@ -49,6 +49,10 @@ var OrdersItems = /** @class */ (function () {
         __metadata("design:type", Number)
     ], OrdersItems.prototype, "quantity", void 0);
     __decorate([
+        typeorm_1.Column('boolean'),
+        __metadata("design:type", Boolean)
+    ], OrdersItems.prototype, "ironing", void 0);
+    __decorate([
         typeorm_1.CreateDateColumn(),
         __metadata("design:type", Date)
     ], OrdersItems.prototype, "created_at", void 0);

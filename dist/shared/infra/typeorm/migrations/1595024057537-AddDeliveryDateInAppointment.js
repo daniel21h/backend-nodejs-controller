@@ -47,6 +47,7 @@ var AddDeliveryDateInAppointment1595024057537 = /** @class */ (function () {
                     case 0: return [4 /*yield*/, queryRunner.addColumn('appointments', new typeorm_1.TableColumn({
                             name: 'delivery_date',
                             type: 'timestamp with time zone',
+                            isNullable: true,
                         }))];
                     case 1:
                         _a.sent();
